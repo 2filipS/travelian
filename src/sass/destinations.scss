@@ -1,28 +1,91 @@
 @import "variables";
 @import "helpers";
 
+%section-header{
+    margin-top: toRem(122px);
+    width: 100%;
+    max-width: toRem(1556px);
+    padding-right: toRem(182px);
+    margin-bottom: toRem(100px);
+    position: relative;
+    %hdl{
+        color: $input-font-color;
+        font-weight: 400;
+        font-family: "Playfair Display", serif;
+        font-size: toRem(64px);
+        margin: 0;
+        padding-top: toRem(18px);
+        padding-bottom: toRem(18px);
+        width: 100%;
+        display: inline-block;
+        position: relative;
+    }
+    %desc{
+        width: 100%;
+        display: inline-block;
+        font-family: Rubik, sans-serif;
+        font-size: toRem(24px);
+        font-weight: 400;
+        color: $secondary-font-color;
+    }
+}
+%nav-arrows{
+    max-width: toRem(172px);
+    display: flex;
+    gap: 40px;
+    %nav-arrows__btn{
+        background-color: $input-font-color;
+        display: inline-block;
+        width: toRem(60px);
+        height: toRem(60px);
+        border-radius: toRem(12px);
+        position: relative;
+        bottom: 0;
+        &::after{
+            content: '';
+            background-image: url('#{$imgs-path}/arrow2.svg');
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: toRem(12px);
+            height: toRem(22px);
+            right: toRem(26px);
+            position: absolute;
+            transform: translateY(19px);
+        }
+    }
+    %nav-arrows__btn--next{
+        background-color: $primary-color;
+        display: inline-block;
+        width: toRem(60px);
+        height: toRem(60px);
+        border-radius: toRem(12px);
+        position: relative;
+        &::after{
+            content: '';
+            background-image: url('#{$imgs-path}/arrow2.svg');
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: toRem(12px);
+            height: toRem(22px);
+            left: toRem(26px);
+            position: absolute;
+            transform: translateY(19px) scaleX(-1);
+        }
+    }
+}
+
 .destinations{
     min-height: 100vh;
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    &__header{
-        margin-top: toRem(122px);
-        width: 100%;
-        max-width: toRem(1556px);
-        padding-right: toRem(182px);
-        .header__content-hdl{
-            color: $input-font-color;
-            font-weight: 400;
-            font-family: "Playfair Display", serif;
-            font-size: toRem(64px);
-            margin: 0;
-            padding-top: toRem(18px);
-            padding-bottom: toRem(18px);
-            width: 100%;
-            display: inline-block;
-            position: relative;
+    padding-bottom: toRem(140px);
+    .section-header{
+        @extend %section-header;
+
+        &__hdl{
+            @extend %hdl;
             &::before{
                 content: '';
                 position: absolute;
@@ -34,41 +97,27 @@
                 background-color: $primary-color;
             }
         }
-        .header__content-desc{
-            width: 100%;
-            display: inline-block;
-            font-family: Rubik, sans-serif;
-            font-size: toRem(24px);
-            font-weight: 400;
-            color: $secondary-font-color;
+        &__desc{
+            @extend %desc;
+        }
+        &__nav-arrows{
+            @extend %nav-arrows;
+            position: absolute;
+            bottom: 0;
+            right: toRem(182px);
+            .nav-arrows__btn{
+                @extend %nav-arrows__btn;
+            }
+            .nav-arrows__btn--next{
+                @extend %nav-arrows__btn--next;
+            }
         }
     }
 
-    &__content{
-
-    }
 }
 
 .slider{
-    &__image{
-
+    &__images{
     }
 }
 
-.dest-img{
-    &__image{
-
-    }
-    &__text-block{
-
-    }
-}
-
-.dest-img-desc{
-    &__hdl{
-
-    }
-    &__location{
-
-    }
-}
