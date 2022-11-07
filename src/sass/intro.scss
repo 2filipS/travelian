@@ -17,13 +17,14 @@
     background-image: url("#{$imgs-path}/intro_bg.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
-    margin-bottom: 10px;
-    padding-bottom: 50px;
+    padding-bottom: toRem(100px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .header {
@@ -115,7 +116,6 @@
         justify-content: space-between;
         width: 100%;
         max-width: toRem(1291px);
-        margin-bottom: toRem(50px);
         border-radius: 0 toRem(20px) toRem(20px) 0;
     }
 

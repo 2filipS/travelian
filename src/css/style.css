@@ -327,13 +327,14 @@ html, body {
   background-image: url("../images/intro_bg.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
-  margin-bottom: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 6.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .header {
@@ -408,7 +409,6 @@ html, body {
   justify-content: space-between;
   width: 100%;
   max-width: 80.6875rem;
-  margin-bottom: 3.125rem;
   border-radius: 0 1.25rem 1.25rem 0;
 }
 .search__group {
