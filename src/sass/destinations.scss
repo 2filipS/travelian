@@ -2,8 +2,46 @@
 @import "helpers";
 
 .destinations{
+    min-height: 100vh;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     &__header{
-
+        margin-top: toRem(122px);
+        width: 100%;
+        max-width: toRem(1556px);
+        padding-right: toRem(182px);
+        .header__content-hdl{
+            color: $input-font-color;
+            font-weight: 400;
+            font-family: "Playfair Display", serif;
+            font-size: toRem(64px);
+            margin: 0;
+            padding-top: toRem(18px);
+            padding-bottom: toRem(18px);
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: toRem(-4px);
+                left: 0;
+                width: toRem(365px);
+                height: toRem(3px);
+                display: block;
+                background-color: $primary-color;
+            }
+        }
+        .header__content-desc{
+            width: 100%;
+            display: inline-block;
+            font-family: Rubik, sans-serif;
+            font-size: toRem(24px);
+            font-weight: 400;
+            color: $secondary-font-color;
+        }
     }
 
     &__content{
@@ -31,15 +69,6 @@
 
     }
     &__location{
-
-    }
-}
-
-.header{
-    &__content-hdl{
-
-    }
-    &__content-desc{
 
     }
 }

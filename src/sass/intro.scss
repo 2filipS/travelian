@@ -167,6 +167,7 @@
         border-radius: 0 toRem(20px) toRem(20px) 0;
         cursor: pointer;
         position: relative;
+        right: toRem(-1px);
         &::after{
             content: '';
             background-image: url('#{$imgs-path}/arrow.svg');
