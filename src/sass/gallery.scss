@@ -36,17 +36,34 @@
         }
 
         &__nav-arrows {
-        @extend %nav-arrows;
-            .nav-arrows__btn{
+            @extend %nav-arrows;
+            position: absolute;
+            bottom: toRem(24px);
+            right: 0;
+
+            .nav-arrows__btn {
                 @extend %nav-arrows__btn;
             }
-            .nav-arrows__btn--next{
+
+            .nav-arrows__btn--next {
                 @extend %nav-arrows__btn--next;
             }
         }
     }
 
     &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        max-width: toRem(1556px);
+        align-items: center;
+    }
 
+    &__image {
+        max-height: toRem(570px);
+    }
+
+    &__image:nth-child(2) {
+        padding-bottom: toRem(75px);
     }
 }
