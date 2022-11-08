@@ -1,0 +1,52 @@
+@import "variables";
+@import "helpers";
+
+.gallery {
+    min-height: 100vh;
+    background-color: $secondary-color;
+    padding-bottom: toRem(140px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__header {
+
+    }
+
+    .section-header {
+        @extend %section-header;
+
+        &__hdl {
+            @extend %hdl;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: toRem(-4px);
+                left: 0;
+                width: toRem(283px);
+                height: toRem(3px);
+                display: block;
+                background-color: $primary-color;
+            }
+        }
+
+        &__desc {
+            @extend %desc;
+        }
+
+        &__nav-arrows {
+        @extend %nav-arrows;
+            .nav-arrows__btn{
+                @extend %nav-arrows__btn;
+            }
+            .nav-arrows__btn--next{
+                @extend %nav-arrows__btn--next;
+            }
+        }
+    }
+
+    &__content {
+
+    }
+}
