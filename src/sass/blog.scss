@@ -1,0 +1,88 @@
+@import "variables";
+@import "helpers";
+
+.blog{
+    min-height: 100vh;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: toRem(140px);
+    .section-header{
+        @extend %section-header;
+        &__hdl{
+            @extend %hdl;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: toRem(-4px);
+                left: 0;
+                width: toRem(150px);
+                height: toRem(3px);
+                display: block;
+                background-color: $primary-color;
+            }
+        }
+        &__desc{
+            @extend %desc;
+        }
+        &__nav-arrows{
+            @extend %nav-arrows;
+            position: absolute;
+            bottom: toRem(24px);
+            right: toRem(182px);
+            .nav-arrows__btn{
+                @extend %nav-arrows__btn;
+            }
+            .nav-arrows__btn--next{
+                @extend %nav-arrows__btn--next;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        max-width: toRem(1556px);
+        .text-block__hdl{
+            font-family: 'Playfair Display', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 1.33;
+            margin-bottom: toRem(24px);
+        }
+        .text-block__text{
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 2.17;
+        }
+        .text-block__read-more{
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            text-decoration: none;
+            color: $primary-color;
+            position: relative;
+            display: inline-block;
+
+            &::after{
+                content: '';
+                background-image: url('#{$imgs-path}/readmore-arrow.svg');
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: toRem(28px);
+                height: toRem(16px);
+                position: absolute;
+                right: toRem(-60px);
+                transform: translateY(7px);
+            }
+        }
+    }
+    &__text-block{
+        margin-left: toRem(32px);
+        margin-top: toRem(106px);
+        margin-bottom: toRem(106px);
+    }
+}
