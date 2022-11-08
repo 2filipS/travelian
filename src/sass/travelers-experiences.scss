@@ -1,0 +1,49 @@
+@import "variables";
+@import "helpers";
+
+.travelers-exp{
+
+    &__header{
+
+    }
+
+    .section-header{
+        &__hdl{
+
+        }
+        &__desc{
+
+        }
+    }
+
+    &__content{
+
+    }
+    &__nav-arrows{
+        
+    }
+}
+
+.client-box{
+    &__avatar{
+
+    }
+    &__review{
+
+    }
+    &__stars{
+        .client-box__star{
+
+        }
+    }
+    &__user{
+        &__name{
+
+        }
+        &__role{
+
+        }
+    }
+}
+
+
