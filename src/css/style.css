@@ -311,6 +311,83 @@ html, body {
   font-size: 16px;
 }
 
+html, body {
+  font-size: 16px;
+}
+
+.special-offer .section-header, .destinations .section-header {
+  margin-top: 7.625rem;
+  width: 100%;
+  max-width: 97.25rem;
+  margin-bottom: 6.25rem;
+  position: relative;
+}
+.special-offer .section-header .section-header__hdl, .destinations .section-header .section-header__hdl {
+  color: #172432;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  margin: 0;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+.special-offer .section-header .section-header__desc, .destinations .section-header .section-header__desc {
+  width: 100%;
+  display: inline-block;
+  font-family: Rubik, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #767e86;
+}
+
+.special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
+  max-width: 10.75rem;
+  display: flex;
+  gap: 40px;
+}
+.special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
+  background-color: #172432;
+  display: inline-block;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 0.75rem;
+  position: relative;
+  bottom: 0;
+}
+.special-offer .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after {
+  content: "";
+  background-image: url("../images/arrow2.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 0.75rem;
+  height: 1.375rem;
+  right: 1.625rem;
+  position: absolute;
+  transform: translateY(19px);
+}
+.special-offer .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next {
+  background-color: #FF7757;
+  display: inline-block;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 0.75rem;
+  position: relative;
+}
+.special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
+  content: "";
+  background-image: url("../images/arrow2.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 0.75rem;
+  height: 1.375rem;
+  left: 1.625rem;
+  position: absolute;
+  transform: translateY(19px) scaleX(-1);
+}
+
 .auth-menu__item, .main-menu__item {
   font-family: Rubik, sans-serif;
   font-weight: 400;
@@ -471,15 +548,18 @@ html, body {
   font-size: 16px;
 }
 
-.destinations .section-header {
+html, body {
+  font-size: 16px;
+}
+
+.special-offer .section-header, .destinations .section-header {
   margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  padding-right: 11.375rem;
   margin-bottom: 6.25rem;
   position: relative;
 }
-.destinations .section-header .section-header__hdl {
+.special-offer .section-header .section-header__hdl, .destinations .section-header .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -491,7 +571,7 @@ html, body {
   display: inline-block;
   position: relative;
 }
-.destinations .section-header .section-header__desc {
+.special-offer .section-header .section-header__desc, .destinations .section-header .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -500,12 +580,12 @@ html, body {
   color: #767e86;
 }
 
-.destinations .section-header__nav-arrows {
+.special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
 }
-.destinations .section-header__nav-arrows .nav-arrows__btn {
+.special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
   display: inline-block;
   width: 3.75rem;
@@ -514,7 +594,7 @@ html, body {
   position: relative;
   bottom: 0;
 }
-.destinations .section-header__nav-arrows .nav-arrows__btn::after {
+.special-offer .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -525,7 +605,7 @@ html, body {
   position: absolute;
   transform: translateY(19px);
 }
-.destinations .section-header__nav-arrows .nav-arrows__btn--next {
+.special-offer .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next {
   background-color: #FF7757;
   display: inline-block;
   width: 3.75rem;
@@ -533,7 +613,7 @@ html, body {
   border-radius: 0.75rem;
   position: relative;
 }
-.destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
+.special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -553,6 +633,9 @@ html, body {
   align-items: flex-end;
   padding-bottom: 8.75rem;
 }
+.destinations .section-header {
+  padding-right: 11.375rem;
+}
 .destinations .section-header__hdl::before {
   content: "";
   position: absolute;
@@ -565,8 +648,118 @@ html, body {
 }
 .destinations .section-header__nav-arrows {
   position: absolute;
-  bottom: 0;
+  bottom: 1.5rem;
   right: 11.375rem;
+}
+html, body {
+  font-size: 16px;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+.special-offer .section-header, .destinations .section-header {
+  margin-top: 7.625rem;
+  width: 100%;
+  max-width: 97.25rem;
+  margin-bottom: 6.25rem;
+  position: relative;
+}
+.special-offer .section-header .section-header__hdl, .destinations .section-header .section-header__hdl {
+  color: #172432;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  margin: 0;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+.special-offer .section-header .section-header__desc, .destinations .section-header .section-header__desc {
+  width: 100%;
+  display: inline-block;
+  font-family: Rubik, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #767e86;
+}
+
+.special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
+  max-width: 10.75rem;
+  display: flex;
+  gap: 40px;
+}
+.special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
+  background-color: #172432;
+  display: inline-block;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 0.75rem;
+  position: relative;
+  bottom: 0;
+}
+.special-offer .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after {
+  content: "";
+  background-image: url("../images/arrow2.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 0.75rem;
+  height: 1.375rem;
+  right: 1.625rem;
+  position: absolute;
+  transform: translateY(19px);
+}
+.special-offer .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next {
+  background-color: #FF7757;
+  display: inline-block;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 0.75rem;
+  position: relative;
+}
+.special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
+  content: "";
+  background-image: url("../images/arrow2.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 0.75rem;
+  height: 1.375rem;
+  left: 1.625rem;
+  position: absolute;
+  transform: translateY(19px) scaleX(-1);
+}
+
+.special-offer {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8.75rem;
+}
+.special-offer .section-header__hdl {
+  text-align: right;
+}
+.special-offer .section-header__hdl::before {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0;
+  width: 15.0625rem;
+  height: 0.1875rem;
+  display: block;
+  background-color: #FF7757;
+}
+.special-offer .section-header__desc {
+  text-align: right;
+}
+.special-offer .section-header__nav-arrows {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

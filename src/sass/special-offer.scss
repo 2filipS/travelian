@@ -1,3 +1,59 @@
 @import "variables";
 @import "helpers";
 
+.special-offer {
+    min-height: 100vh;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: toRem(140px);
+    &__header {
+
+    }
+
+    .section-header {
+        @extend %section-header;
+
+        &__hdl {
+            @extend %hdl;
+            text-align: right;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: toRem(-4px);
+                right: 0;
+                width: toRem(241px);
+                height: toRem(3px);
+                display: block;
+                background-color: $primary-color;
+            }
+        }
+
+        &__desc {
+            @extend %desc;
+            text-align: right;
+        }
+
+        &__nav-arrows {
+            @extend %nav-arrows;
+            position: absolute;
+            bottom: toRem(24px);
+            left: 0;
+            .nav-arrows__btn{
+                @extend %nav-arrows__btn;
+            }
+            .nav-arrows__btn--next{
+                @extend %nav-arrows__btn--next;
+            }
+        }
+    }
+
+    &__content {
+
+    }
+
+    &__image {
+
+    }
+}

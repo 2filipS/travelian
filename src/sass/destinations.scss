@@ -12,7 +12,7 @@
     padding-bottom: toRem(140px);
     .section-header{
         @extend %section-header;
-
+        padding-right: toRem(182px);
         &__hdl{
             @extend %hdl;
             &::before{
@@ -32,7 +32,7 @@
         &__nav-arrows{
             @extend %nav-arrows;
             position: absolute;
-            bottom: 0;
+            bottom: toRem(24px);
             right: toRem(182px);
             .nav-arrows__btn{
                 @extend %nav-arrows__btn;

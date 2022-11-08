@@ -1,4 +1,5 @@
 @use 'sass:math';
+@import "variables";
 
 $base-font-size: 16px;
 
@@ -12,7 +13,6 @@ $base-font-size: 16px;
   margin-top: toRem(122px);
   width: 100%;
   max-width: toRem(1556px);
-  padding-right: toRem(182px);
   margin-bottom: toRem(100px);
   position: relative;
   %hdl{
