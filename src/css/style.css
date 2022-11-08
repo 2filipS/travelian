@@ -322,7 +322,8 @@ html, body {
   margin-bottom: 6.25rem;
   position: relative;
 }
-.blog .section-header .section-header__hdl, .special-offer .section-header .section-header__hdl, .destinations .section-header .section-header__hdl {
+
+.trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -333,7 +334,8 @@ html, body {
   display: inline-block;
   position: relative;
 }
-.blog .section-header .section-header__desc, .special-offer .section-header .section-header__desc, .destinations .section-header .section-header__desc {
+
+.trip-planners .section-header__desc, .blog .section-header__desc, .special-offer .section-header__desc, .destinations .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -341,6 +343,7 @@ html, body {
   font-weight: 400;
   color: #767e86;
 }
+
 .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
@@ -559,7 +562,8 @@ html, body {
   margin-bottom: 6.25rem;
   position: relative;
 }
-.blog .section-header .section-header__hdl, .special-offer .section-header .section-header__hdl, .destinations .section-header .section-header__hdl {
+
+.trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -570,7 +574,8 @@ html, body {
   display: inline-block;
   position: relative;
 }
-.blog .section-header .section-header__desc, .special-offer .section-header .section-header__desc, .destinations .section-header .section-header__desc {
+
+.trip-planners .section-header__desc, .blog .section-header__desc, .special-offer .section-header__desc, .destinations .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -578,6 +583,7 @@ html, body {
   font-weight: 400;
   color: #767e86;
 }
+
 .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
@@ -666,7 +672,8 @@ html, body {
   margin-bottom: 6.25rem;
   position: relative;
 }
-.blog .section-header .section-header__hdl, .special-offer .section-header .section-header__hdl, .destinations .section-header .section-header__hdl {
+
+.trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -677,7 +684,8 @@ html, body {
   display: inline-block;
   position: relative;
 }
-.blog .section-header .section-header__desc, .special-offer .section-header .section-header__desc, .destinations .section-header .section-header__desc {
+
+.trip-planners .section-header__desc, .blog .section-header__desc, .special-offer .section-header__desc, .destinations .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -685,6 +693,7 @@ html, body {
   font-weight: 400;
   color: #767e86;
 }
+
 .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
@@ -778,7 +787,8 @@ html, body {
   margin-bottom: 6.25rem;
   position: relative;
 }
-.blog .section-header .section-header__hdl, .destinations .section-header .section-header__hdl, .special-offer .section-header .section-header__hdl {
+
+.trip-planners .section-header__hdl, .blog .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -789,7 +799,8 @@ html, body {
   display: inline-block;
   position: relative;
 }
-.blog .section-header .section-header__desc, .destinations .section-header .section-header__desc, .special-offer .section-header .section-header__desc {
+
+.trip-planners .section-header__desc, .blog .section-header__desc, .destinations .section-header__desc, .special-offer .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -797,6 +808,7 @@ html, body {
   font-weight: 400;
   color: #767e86;
 }
+
 .blog .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
@@ -928,7 +940,8 @@ html, body {
   margin-bottom: 6.25rem;
   position: relative;
 }
-.destinations .section-header .section-header__hdl, .special-offer .section-header .section-header__hdl, .blog .section-header .section-header__hdl {
+
+.trip-planners .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -939,7 +952,8 @@ html, body {
   display: inline-block;
   position: relative;
 }
-.destinations .section-header .section-header__desc, .special-offer .section-header .section-header__desc, .blog .section-header .section-header__desc {
+
+.trip-planners .section-header__desc, .destinations .section-header__desc, .special-offer .section-header__desc, .blog .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -947,6 +961,7 @@ html, body {
   font-weight: 400;
   color: #767e86;
 }
+
 .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
@@ -992,6 +1007,75 @@ html, body {
   left: 1.625rem;
   position: absolute;
   transform: translateY(19px) scaleX(-1);
+}
+
+.trip-planners {
+  min-height: 51.5625rem;
+  display: flex;
+  padding-left: 11.375rem;
+  align-items: center;
+}
+.trip-planners .section-header {
+  max-width: 24.625rem;
+  padding-top: 5.8125rem;
+}
+.trip-planners .section-header__hdl::before {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  width: 14.4375rem;
+  height: 0.1875rem;
+  display: block;
+  background-color: #FF7757;
+}
+.trip-planners .section-header__desc {
+  font-size: 18px;
+}
+.trip-planners .section-header__trip-plans-btn {
+  width: 11.625rem;
+  height: 3.8125rem;
+  border-radius: 0.75rem;
+  background-color: #FF7757;
+  border-width: 0;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+}
+.trip-planners .section-header__btn-wrapper {
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+  width: 11.625rem;
+  position: relative;
+}
+.trip-planners .section-header__btn-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 2.6875rem;
+  height: 2.6875rem;
+  background-color: #172432;
+  left: -0.875rem;
+  top: -0.90625rem;
+  display: block;
+  z-index: -1;
+}
+.trip-planners .section-header__btn-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 2.6875rem;
+  height: 2.6875rem;
+  background-color: #767e86;
+  right: -1.125rem;
+  bottom: -1rem;
+  display: block;
+  z-index: -1;
+}
+.trip-planners__content {
+  position: absolute;
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

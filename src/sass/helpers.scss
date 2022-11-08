@@ -15,36 +15,38 @@ $base-font-size: 16px;
   max-width: toRem(1556px);
   margin-bottom: toRem(100px);
   position: relative;
-  %hdl{
-    color: $input-font-color;
-    font-weight: 400;
-    font-family: "Playfair Display", serif;
-    font-size: toRem(64px);
-    margin: 0;
-    padding-top: toRem(18px);
-    padding-bottom: toRem(18px);
-    display: inline-block;
-    position: relative;
-  }
-  %desc{
-    width: 100%;
-    display: inline-block;
-    font-family: Rubik, sans-serif;
-    font-size: toRem(24px);
-    font-weight: 400;
-    color: $secondary-font-color;
-  }
-  %hdl-underline{
-    content: '';
-    position: absolute;
-    bottom: toRem(-4px);
-    left: 0;
-    width: 62%;
-    height: toRem(3px);
-    display: block;
-    background-color: $primary-color;
-  }
 }
+
+%hdl{
+  color: $input-font-color;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  font-size: toRem(64px);
+  margin: 0;
+  padding-top: toRem(18px);
+  padding-bottom: toRem(18px);
+  display: inline-block;
+  position: relative;
+}
+%desc{
+  width: 100%;
+  display: inline-block;
+  font-family: Rubik, sans-serif;
+  font-size: toRem(24px);
+  font-weight: 400;
+  color: $secondary-font-color;
+}
+%hdl-underline{
+  content: '';
+  position: absolute;
+  bottom: toRem(-4px);
+  left: 0;
+  width: 62%;
+  height: toRem(3px);
+  display: block;
+  background-color: $primary-color;
+}
+
 %nav-arrows{
   max-width: toRem(172px);
   display: flex;
