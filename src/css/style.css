@@ -315,7 +315,7 @@ html, body {
   font-size: 16px;
 }
 
-.gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
+.travelers-exp .section-header, .gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
   margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
@@ -323,7 +323,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
+.travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -335,7 +335,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__desc, .trip-planners .section-header__desc, .blog .section-header__desc, .special-offer .section-header__desc, .destinations .section-header__desc {
+.travelers-exp .section-header__desc, .gallery .section-header__desc, .trip-planners .section-header__desc, .blog .section-header__desc, .special-offer .section-header__desc, .destinations .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -344,12 +344,12 @@ html, body {
   color: #767e86;
 }
 
-.gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
+.travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
+.travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
   display: inline-block;
   width: 3.75rem;
@@ -359,7 +359,7 @@ html, body {
   bottom: 0;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after {
+.travelers-exp__nav-arrows .nav-arrows__btn::after, .gallery .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -370,7 +370,7 @@ html, body {
   position: absolute;
   transform: translateY(19px);
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next {
+.travelers-exp__nav-arrows .nav-arrows__btn--next, .gallery .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next {
   background-color: #FF7757;
   display: inline-block;
   width: 3.75rem;
@@ -379,7 +379,7 @@ html, body {
   position: relative;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
+.travelers-exp__nav-arrows .nav-arrows__btn--next::after, .gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -555,7 +555,7 @@ html, body {
   font-size: 16px;
 }
 
-.gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
+.travelers-exp .section-header, .gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
   margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
@@ -563,7 +563,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
+.travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -575,7 +575,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__desc, .trip-planners .section-header__desc, .blog .section-header__desc, .special-offer .section-header__desc, .destinations .section-header__desc {
+.travelers-exp .section-header__desc, .gallery .section-header__desc, .trip-planners .section-header__desc, .blog .section-header__desc, .special-offer .section-header__desc, .destinations .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -584,12 +584,12 @@ html, body {
   color: #767e86;
 }
 
-.gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
+.travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
+.travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
   display: inline-block;
   width: 3.75rem;
@@ -599,7 +599,7 @@ html, body {
   bottom: 0;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after {
+.travelers-exp__nav-arrows .nav-arrows__btn::after, .gallery .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -610,7 +610,7 @@ html, body {
   position: absolute;
   transform: translateY(19px);
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next {
+.travelers-exp__nav-arrows .nav-arrows__btn--next, .gallery .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next {
   background-color: #FF7757;
   display: inline-block;
   width: 3.75rem;
@@ -619,7 +619,7 @@ html, body {
   position: relative;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
+.travelers-exp__nav-arrows .nav-arrows__btn--next::after, .gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -665,7 +665,7 @@ html, body {
   font-size: 16px;
 }
 
-.gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
+.travelers-exp .section-header, .gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
   margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
@@ -673,7 +673,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
+.travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -685,7 +685,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__desc, .trip-planners .section-header__desc, .blog .section-header__desc, .special-offer .section-header__desc, .destinations .section-header__desc {
+.travelers-exp .section-header__desc, .gallery .section-header__desc, .trip-planners .section-header__desc, .blog .section-header__desc, .special-offer .section-header__desc, .destinations .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -694,12 +694,12 @@ html, body {
   color: #767e86;
 }
 
-.gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
+.travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
+.travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
   display: inline-block;
   width: 3.75rem;
@@ -709,7 +709,7 @@ html, body {
   bottom: 0;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after {
+.travelers-exp__nav-arrows .nav-arrows__btn::after, .gallery .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -720,7 +720,7 @@ html, body {
   position: absolute;
   transform: translateY(19px);
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next {
+.travelers-exp__nav-arrows .nav-arrows__btn--next, .gallery .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next {
   background-color: #FF7757;
   display: inline-block;
   width: 3.75rem;
@@ -729,7 +729,7 @@ html, body {
   position: relative;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
+.travelers-exp__nav-arrows .nav-arrows__btn--next::after, .gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -780,7 +780,7 @@ html, body {
   font-size: 16px;
 }
 
-.gallery .section-header, .blog .section-header, .destinations .section-header, .special-offer .section-header {
+.travelers-exp .section-header, .gallery .section-header, .blog .section-header, .destinations .section-header, .special-offer .section-header {
   margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
@@ -788,7 +788,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl {
+.travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -800,7 +800,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__desc, .trip-planners .section-header__desc, .blog .section-header__desc, .destinations .section-header__desc, .special-offer .section-header__desc {
+.travelers-exp .section-header__desc, .gallery .section-header__desc, .trip-planners .section-header__desc, .blog .section-header__desc, .destinations .section-header__desc, .special-offer .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -809,12 +809,12 @@ html, body {
   color: #767e86;
 }
 
-.gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows {
+.travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn {
+.travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
   display: inline-block;
   width: 3.75rem;
@@ -824,7 +824,7 @@ html, body {
   bottom: 0;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after {
+.travelers-exp__nav-arrows .nav-arrows__btn::after, .gallery .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -835,7 +835,7 @@ html, body {
   position: absolute;
   transform: translateY(19px);
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next {
+.travelers-exp__nav-arrows .nav-arrows__btn--next, .gallery .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next {
   background-color: #FF7757;
   display: inline-block;
   width: 3.75rem;
@@ -844,7 +844,7 @@ html, body {
   position: relative;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after {
+.travelers-exp__nav-arrows .nav-arrows__btn--next::after, .gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -933,7 +933,7 @@ html, body {
   font-size: 16px;
 }
 
-.gallery .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header {
+.travelers-exp .section-header, .gallery .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header {
   margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
@@ -941,7 +941,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__hdl, .trip-planners .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl {
+.travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -953,7 +953,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__desc, .trip-planners .section-header__desc, .destinations .section-header__desc, .special-offer .section-header__desc, .blog .section-header__desc {
+.travelers-exp .section-header__desc, .gallery .section-header__desc, .trip-planners .section-header__desc, .destinations .section-header__desc, .special-offer .section-header__desc, .blog .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -962,12 +962,12 @@ html, body {
   color: #767e86;
 }
 
-.gallery .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows {
+.travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn {
+.travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
   display: inline-block;
   width: 3.75rem;
@@ -977,7 +977,7 @@ html, body {
   bottom: 0;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after {
+.travelers-exp__nav-arrows .nav-arrows__btn::after, .gallery .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -988,7 +988,7 @@ html, body {
   position: absolute;
   transform: translateY(19px);
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next {
+.travelers-exp__nav-arrows .nav-arrows__btn--next, .gallery .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next {
   background-color: #FF7757;
   display: inline-block;
   width: 3.75rem;
@@ -997,7 +997,7 @@ html, body {
   position: relative;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after {
+.travelers-exp__nav-arrows .nav-arrows__btn--next::after, .gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -1086,7 +1086,7 @@ html, body {
   font-size: 16px;
 }
 
-.gallery .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header {
+.travelers-exp .section-header, .gallery .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header {
   margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
@@ -1094,7 +1094,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl, .trip-planners .section-header__hdl {
+.travelers-exp .section-header__hdl, .gallery .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl, .trip-planners .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -1106,7 +1106,7 @@ html, body {
   position: relative;
 }
 
-.gallery .section-header__desc, .destinations .section-header__desc, .special-offer .section-header__desc, .blog .section-header__desc, .trip-planners .section-header__desc {
+.travelers-exp .section-header__desc, .gallery .section-header__desc, .destinations .section-header__desc, .special-offer .section-header__desc, .blog .section-header__desc, .trip-planners .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -1115,12 +1115,12 @@ html, body {
   color: #767e86;
 }
 
-.gallery .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows {
+.travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn {
+.travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
   display: inline-block;
   width: 3.75rem;
@@ -1130,7 +1130,7 @@ html, body {
   bottom: 0;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after {
+.travelers-exp__nav-arrows .nav-arrows__btn::after, .gallery .section-header__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -1141,7 +1141,7 @@ html, body {
   position: absolute;
   transform: translateY(19px);
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next {
+.travelers-exp__nav-arrows .nav-arrows__btn--next, .gallery .section-header__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next {
   background-color: #FF7757;
   display: inline-block;
   width: 3.75rem;
@@ -1150,7 +1150,7 @@ html, body {
   position: relative;
   cursor: pointer;
 }
-.gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after {
+.travelers-exp__nav-arrows .nav-arrows__btn--next::after, .gallery .section-header__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -1207,7 +1207,7 @@ html, body {
   font-size: 16px;
 }
 
-.destinations .section-header, .special-offer .section-header, .blog .section-header, .gallery .section-header {
+.travelers-exp .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header, .gallery .section-header {
   margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
@@ -1215,7 +1215,7 @@ html, body {
   position: relative;
 }
 
-.destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl, .trip-planners .section-header__hdl, .gallery .section-header__hdl {
+.travelers-exp .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl, .trip-planners .section-header__hdl, .gallery .section-header__hdl {
   color: #172432;
   font-weight: 400;
   font-family: "Playfair Display", serif;
@@ -1227,7 +1227,7 @@ html, body {
   position: relative;
 }
 
-.destinations .section-header__desc, .special-offer .section-header__desc, .blog .section-header__desc, .trip-planners .section-header__desc, .gallery .section-header__desc {
+.travelers-exp .section-header__desc, .destinations .section-header__desc, .special-offer .section-header__desc, .blog .section-header__desc, .trip-planners .section-header__desc, .gallery .section-header__desc {
   width: 100%;
   display: inline-block;
   font-family: Rubik, sans-serif;
@@ -1236,12 +1236,12 @@ html, body {
   color: #767e86;
 }
 
-.destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows, .gallery .section-header__nav-arrows {
+.travelers-exp__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows, .gallery .section-header__nav-arrows {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
 }
-.destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn {
+.travelers-exp__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
   display: inline-block;
   width: 3.75rem;
@@ -1251,7 +1251,7 @@ html, body {
   bottom: 0;
   cursor: pointer;
 }
-.destinations .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .gallery .section-header__nav-arrows .nav-arrows__btn::after {
+.travelers-exp__nav-arrows .nav-arrows__btn::after, .destinations .section-header__nav-arrows .nav-arrows__btn::after, .special-offer .section-header__nav-arrows .nav-arrows__btn::after, .blog .section-header__nav-arrows .nav-arrows__btn::after, .gallery .section-header__nav-arrows .nav-arrows__btn::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -1262,7 +1262,7 @@ html, body {
   position: absolute;
   transform: translateY(19px);
 }
-.destinations .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .gallery .section-header__nav-arrows .nav-arrows__btn--next {
+.travelers-exp__nav-arrows .nav-arrows__btn--next, .destinations .section-header__nav-arrows .nav-arrows__btn--next, .special-offer .section-header__nav-arrows .nav-arrows__btn--next, .blog .section-header__nav-arrows .nav-arrows__btn--next, .gallery .section-header__nav-arrows .nav-arrows__btn--next {
   background-color: #FF7757;
   display: inline-block;
   width: 3.75rem;
@@ -1271,7 +1271,7 @@ html, body {
   position: relative;
   cursor: pointer;
 }
-.destinations .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .gallery .section-header__nav-arrows .nav-arrows__btn--next::after {
+.travelers-exp__nav-arrows .nav-arrows__btn--next::after, .destinations .section-header__nav-arrows .nav-arrows__btn--next::after, .special-offer .section-header__nav-arrows .nav-arrows__btn--next::after, .blog .section-header__nav-arrows .nav-arrows__btn--next::after, .gallery .section-header__nav-arrows .nav-arrows__btn--next::after {
   content: "";
   background-image: url("../images/arrow2.svg");
   background-repeat: no-repeat;
@@ -1281,6 +1281,88 @@ html, body {
   left: 1.625rem;
   position: absolute;
   transform: translateY(19px) scaleX(-1);
+}
+
+.travelers-exp {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 15rem;
+  padding-left: 11.375rem;
+  overflow: hidden;
+  position: relative;
+}
+.travelers-exp .section-header__hdl::before {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  width: 21.6875rem;
+  height: 0.1875rem;
+  display: block;
+  background-color: #FF7757;
+}
+.travelers-exp__content {
+  display: flex;
+  gap: 2rem;
+}
+.travelers-exp__nav-arrows {
+  position: absolute;
+  bottom: 15rem;
+  right: 11.375rem;
+}
+.client-box {
+  position: relative;
+  padding-top: 2.625rem;
+  margin-bottom: 6.25rem;
+  min-width: 41.4375rem;
+}
+.client-box__avatar {
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+}
+.client-box__wrapper {
+  background-color: #f5f6f7;
+  padding-inline: 2.5rem;
+  padding-top: 3.75rem;
+  padding-bottom: 2.5rem;
+}
+.client-box__review {
+  color: #767e86;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0;
+  padding-top: 1.5625rem;
+}
+.client-box__stars {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  width: 8.5rem;
+}
+.client-box__stars .client-box__star {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.client-box__user .client-box__name {
+  color: #767e86;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 0.25rem;
+}
+.client-box__user .client-box__role {
+  color: #767e86;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
