@@ -14,10 +14,12 @@
 
     .section-header {
         @extend %section-header;
-
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         &__hdl {
             @extend %hdl;
-            text-align: right;
+
             &::before {
                 content: '';
                 position: absolute;
