@@ -2,20 +2,20 @@
 @import "helpers";
 
 
-
-.destinations{
+.destinations {
     min-height: 100vh;
-    background-color: $secondary-color;
+    background-color: red;
+    min-width: calc(100% + 364px);
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-bottom: toRem(140px);
-    .section-header{
+    justify-content: flex-end;
+    align-items: center;
+    .section-header {
         @extend %section-header;
-        padding-right: toRem(182px);
-        &__hdl{
+
+        &__hdl {
             @extend %hdl;
-            &::before{
+
+            &::before {
                 content: '';
                 position: absolute;
                 bottom: toRem(-4px);
@@ -26,19 +26,36 @@
                 background-color: $primary-color;
             }
         }
-        &__desc{
+
+        &__desc {
             @extend %desc;
         }
-        &__nav-arrows{
+
+        &__nav-arrows {
             @extend %nav-arrows;
             position: absolute;
             bottom: toRem(24px);
-            right: toRem(182px);
-            .nav-arrows__btn{
+            right: 0;
+
+            .nav-arrows__btn {
                 @extend %nav-arrows__btn;
             }
-            .nav-arrows__btn--next{
+
+            .nav-arrows__btn--next {
                 @extend %nav-arrows__btn--next;
+            }
+        }
+    }
+
+    &__content {
+        background-color: green;
+        overflow: hidden;
+        padding: toRem(32px);
+        .slider {
+            display: flex;
+            gap: toRem(32px);
+            &__image {
+                cursor: pointer;
             }
         }
     }

@@ -316,10 +316,8 @@ html, body {
 }
 
 .travelers-exp .section-header, .gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
-  margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  margin-bottom: 6.25rem;
   position: relative;
 }
 
@@ -556,10 +554,8 @@ html, body {
 }
 
 .travelers-exp .section-header, .gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
-  margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  margin-bottom: 6.25rem;
   position: relative;
 }
 
@@ -633,14 +629,11 @@ html, body {
 
 .destinations {
   min-height: 100vh;
-  background-color: #fff;
+  background-color: red;
+  min-width: calc(100% + 364px);
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-bottom: 8.75rem;
-}
-.destinations .section-header {
-  padding-right: 11.375rem;
+  justify-content: flex-end;
+  align-items: center;
 }
 .destinations .section-header__hdl::before {
   content: "";
@@ -655,8 +648,21 @@ html, body {
 .destinations .section-header__nav-arrows {
   position: absolute;
   bottom: 1.5rem;
-  right: 11.375rem;
+  right: 0;
 }
+.destinations__content {
+  background-color: green;
+  overflow: hidden;
+  padding: 2rem;
+}
+.destinations__content .slider {
+  display: flex;
+  gap: 2rem;
+}
+.destinations__content .slider__image {
+  cursor: pointer;
+}
+
 html, body {
   font-size: 16px;
 }
@@ -666,10 +672,8 @@ html, body {
 }
 
 .travelers-exp .section-header, .gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
-  margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  margin-bottom: 6.25rem;
   position: relative;
 }
 
@@ -781,10 +785,8 @@ html, body {
 }
 
 .travelers-exp .section-header, .gallery .section-header, .blog .section-header, .destinations .section-header, .special-offer .section-header {
-  margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  margin-bottom: 6.25rem;
   position: relative;
 }
 
@@ -934,10 +936,8 @@ html, body {
 }
 
 .travelers-exp .section-header, .gallery .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header {
-  margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  margin-bottom: 6.25rem;
   position: relative;
 }
 
@@ -1087,10 +1087,8 @@ html, body {
 }
 
 .travelers-exp .section-header, .gallery .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header {
-  margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  margin-bottom: 6.25rem;
   position: relative;
 }
 
@@ -1208,10 +1206,8 @@ html, body {
 }
 
 .travelers-exp .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header, .gallery .section-header {
-  margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  margin-bottom: 6.25rem;
   position: relative;
 }
 
@@ -1374,10 +1370,8 @@ html, body {
 }
 
 .destinations .section-header, .special-offer .section-header, .blog .section-header, .gallery .section-header, .travelers-exp .section-header {
-  margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  margin-bottom: 6.25rem;
   position: relative;
 }
 
@@ -1500,10 +1494,8 @@ html, body {
 }
 
 .destinations .section-header, .special-offer .section-header, .blog .section-header, .gallery .section-header, .travelers-exp .section-header {
-  margin-top: 7.625rem;
   width: 100%;
   max-width: 97.25rem;
-  margin-bottom: 6.25rem;
   position: relative;
 }
 

@@ -10,10 +10,10 @@ $base-font-size: 16px;
 
 
 %section-header{
-  margin-top: toRem(122px);
   width: 100%;
   max-width: toRem(1556px);
-  margin-bottom: toRem(100px);
+  //margin-inline: auto;
+  //margin-bottom: toRem(100px);
   position: relative;
 }
 
