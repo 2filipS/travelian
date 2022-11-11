@@ -747,13 +747,16 @@ html, body {
   transform: translateY(19px) scaleX(-1);
 }
 
+.special-offer__wrapper {
+  padding: 8.75rem 0 8.75rem 11.375rem;
+}
+
 .special-offer {
   min-height: 100vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 8.75rem;
+  gap: 6.25rem;
 }
 .special-offer .section-header {
   display: flex;
@@ -778,6 +781,67 @@ html, body {
   bottom: 1.5rem;
   left: 0;
 }
+.special-offer__content {
+  display: flex;
+  gap: 2rem;
+}
+
+.offer {
+  max-width: 31.0625rem;
+  position: relative;
+  background-color: #FFF8F1;
+}
+.offer__text-block {
+  padding: 2.5rem 1.25rem;
+}
+.offer__text-block .offer__hdl {
+  color: #767e86;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+}
+.offer__text-block .offer__desc {
+  color: #172432;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.offer__text-block .offer__price {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #767e86;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.offer__text-block .offer__price .price-tag {
+  color: #FF7757;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+}
+.offer__details-btn {
+  position: absolute;
+  font-size: 1.25rem;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  bottom: 40px;
+  right: 24px;
+  padding: 20px 40px;
+  background-color: #FF7757;
+  border-width: 0;
+  border-radius: 0.75rem;
+  color: #fff;
+  cursor: pointer;
+}
+
 html, body {
   font-size: 16px;
 }

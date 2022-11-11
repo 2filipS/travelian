@@ -1,13 +1,16 @@
 @import "variables";
 @import "helpers";
 
+.special-offer__wrapper{
+    padding: toRem(140px) 0 toRem(140px) toRem(182px);
+}
+
 .special-offer {
     min-height: 100vh;
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-bottom: toRem(140px);
+    gap: toRem(100px);
     &__header {
 
     }
@@ -17,6 +20,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+
         &__hdl {
             @extend %hdl;
 
@@ -42,20 +46,93 @@
             position: absolute;
             bottom: toRem(24px);
             left: 0;
-            .nav-arrows__btn{
+
+            .nav-arrows__btn {
                 @extend %nav-arrows__btn;
             }
-            .nav-arrows__btn--next{
+
+            .nav-arrows__btn--next {
                 @extend %nav-arrows__btn--next;
             }
         }
     }
 
     &__content {
-
+        display: flex;
+        gap: toRem(32px);
     }
+}
 
+.offer {
+    max-width: toRem(497px);
+    position: relative;
+    background-color: #FFF8F1;
     &__image {
 
     }
+
+    &__text-block {
+        padding: toRem(40px) toRem(20px);
+        .offer__hdl {
+            color: $secondary-font-color;
+            font-family: 'Mulish', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+        }
+
+        .offer__rating {
+
+        }
+
+        .offer__star {
+
+        }
+
+        .offer__desc {
+            color: $input-font-color;
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        .offer__price {
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            color: $secondary-font-color;
+            display: flex;
+            align-items: center;
+            gap: toRem(8px);
+
+            .price-tag {
+                color: $primary-color;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+            }
+        }
+
+    }
+
+    &__details-btn {
+        position: absolute;
+        font-size: toRem(20px);
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        bottom: 40px;
+        right: 24px;
+        padding: 20px 40px;
+        background-color: $primary-color;
+        border-width: 0;
+        border-radius: toRem(12px);
+        color: $primary-font-color;
+        cursor: pointer;
+    }
+
 }
