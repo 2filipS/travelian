@@ -1,14 +1,16 @@
 @import "variables";
 @import "helpers";
 
+.gallery__wrapper{
+    padding: toRem(140px) 0 toRem(140px) toRem(182px);
+}
+
 .gallery {
     min-height: 100vh;
     background-color: $secondary-color;
-    padding-bottom: toRem(140px);
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-
+    gap: toRem(100px);
     &__header {
 
     }

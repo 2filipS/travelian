@@ -11,7 +11,7 @@
     padding-left: toRem(182px);
     overflow: hidden;
     position: relative;
-
+    gap: toRem(100px);
     .section-header {
         @extend %section-header;
 
@@ -37,14 +37,15 @@
 
     &__content {
         display: flex;
+        position: relative;
         gap: toRem(32px);
     }
 
     &__nav-arrows {
         @extend %nav-arrows;
         position: absolute;
-        bottom: toRem(240px);
-        right: toRem(182px);
+        bottom: toRem(-160px);
+        left: toRem(1384px);
         .nav-arrows__btn{
             @extend %nav-arrows__btn;
         }
@@ -62,7 +63,7 @@
 
     &__avatar {
         position: absolute;
-        top: 0;
+        top: toRem(-25px);
         left: toRem(40px);
     }
 
@@ -81,7 +82,6 @@
         font-size: 18px;
         line-height: 23px;
         margin: 0;
-        padding-top: toRem(25px);
     }
 
     &__stars {

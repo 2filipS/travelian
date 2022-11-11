@@ -1,13 +1,16 @@
 @import "variables";
 @import "helpers";
 
+.blog__wrapper{
+    padding: toRem(140px) 0 toRem(140px) toRem(182px);
+}
+
 .blog{
     min-height: 100vh;
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-bottom: toRem(140px);
+    gap: toRem(100px);
     .section-header{
         @extend %section-header;
         &__hdl{

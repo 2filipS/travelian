@@ -924,13 +924,16 @@ html, body {
   transform: translateY(19px) scaleX(-1);
 }
 
+.blog__wrapper {
+  padding: 8.75rem 0 8.75rem 11.375rem;
+}
+
 .blog {
   min-height: 100vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 8.75rem;
+  gap: 6.25rem;
 }
 .blog .section-header__hdl::before {
   content: "";
@@ -1226,13 +1229,16 @@ html, body {
   transform: translateY(19px) scaleX(-1);
 }
 
+.gallery__wrapper {
+  padding: 8.75rem 0 8.75rem 11.375rem;
+}
+
 .gallery {
   min-height: 100vh;
   background-color: #fff;
-  padding-bottom: 8.75rem;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 6.25rem;
 }
 .gallery .section-header__hdl::before {
   content: "";
@@ -1355,6 +1361,7 @@ html, body {
   padding-left: 11.375rem;
   overflow: hidden;
   position: relative;
+  gap: 6.25rem;
 }
 .travelers-exp .section-header__hdl::before {
   content: "";
@@ -1368,12 +1375,13 @@ html, body {
 }
 .travelers-exp__content {
   display: flex;
+  position: relative;
   gap: 2rem;
 }
 .travelers-exp__nav-arrows {
   position: absolute;
-  bottom: 15rem;
-  right: 11.375rem;
+  bottom: -10rem;
+  left: 86.5rem;
 }
 .client-box {
   position: relative;
@@ -1383,7 +1391,7 @@ html, body {
 }
 .client-box__avatar {
   position: absolute;
-  top: 0;
+  top: -1.5625rem;
   left: 2.5rem;
 }
 .client-box__wrapper {
@@ -1400,7 +1408,6 @@ html, body {
   font-size: 18px;
   line-height: 23px;
   margin: 0;
-  padding-top: 1.5625rem;
 }
 .client-box__stars {
   padding-top: 1.25rem;
