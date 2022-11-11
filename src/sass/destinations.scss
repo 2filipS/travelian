@@ -4,11 +4,12 @@
 
 .destinations {
     min-height: 100vh;
-    background-color: red;
-    min-width: calc(100% + 364px);
+    background-color: $secondary-color;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: toRem(140px) 0 toRem(140px) toRem(182px);
+    box-sizing: border-box;
     .section-header {
         @extend %section-header;
 
@@ -48,9 +49,7 @@
     }
 
     &__content {
-        background-color: green;
         overflow: hidden;
-        padding: toRem(32px);
         .slider {
             display: flex;
             gap: toRem(32px);

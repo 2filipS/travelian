@@ -629,11 +629,12 @@ html, body {
 
 .destinations {
   min-height: 100vh;
-  background-color: red;
-  min-width: calc(100% + 364px);
+  background-color: #fff;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 8.75rem 0 8.75rem 11.375rem;
+  box-sizing: border-box;
 }
 .destinations .section-header__hdl::before {
   content: "";
@@ -651,9 +652,7 @@ html, body {
   right: 0;
 }
 .destinations__content {
-  background-color: green;
   overflow: hidden;
-  padding: 2rem;
 }
 .destinations__content .slider {
   display: flex;
