@@ -50,6 +50,9 @@
 
     &__content {
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: toRem(100px);
         .slider {
             display: flex;
             gap: toRem(32px);

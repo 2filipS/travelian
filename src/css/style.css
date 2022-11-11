@@ -653,6 +653,9 @@ html, body {
 }
 .destinations__content {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
 }
 .destinations__content .slider {
   display: flex;
