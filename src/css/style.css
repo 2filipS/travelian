@@ -925,7 +925,7 @@ html, body {
 }
 
 .blog__wrapper {
-  padding: 8.75rem 0 8.75rem 11.375rem;
+  margin: 8.75rem 0 8.75rem 11.375rem;
 }
 
 .blog {
