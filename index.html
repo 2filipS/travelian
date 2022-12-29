@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Travelian</title>
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@400;500&display=swap"
-          rel="stylesheet">
+            rel="stylesheet">
 </head>
 
 <body>
@@ -32,6 +32,9 @@
             <a href="" class="auth-menu__item">Login</a>
             <a href="" class="auth-menu__item auth-menu__item--btn">Sign up</a>
         </nav>
+        <button type="submit" class="header-toggler">
+            <img src="./src/images/hamburger%201.svg" alt="">
+        </button>
     </header>
 
     <div class="lead">
@@ -41,34 +44,38 @@
 
     <form action="" class="search">
         <div class="search__wrapper">
-            <div class="search__group">
-                <label for="destination" class="search__lbl">Destination</label>
-                <input type="text" id="destination" name="destination" class="search__input" placeholder="Dubai">
+            <div class="search__group-wrapper">
+                <div class="search__group">
+                    <label for="destination" class="search__lbl">Destination</label>
+                    <input type="text" id="destination" name="destination" class="search__input" placeholder="Dubai">
+                </div>
+
+                <div class="search__group">
+                    <label for="person" class="search__lbl">Person</label>
+                    <select name="person" id="person" class="search__input search__input--select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="search__group">
-                <label for="person" class="search__lbl">Person</label>
-                <select name="person" id="person" class="search__input search__input--select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+            <div class="search__group-wrapper">
+                <div class="search__group">
+                    <label for="checkin" class="search__lbl">Check In</label>
+                    <input type="date" id="checkin" name="destination" class="search__input" placeholder="Dubai">
+                </div>
+
+                <div class="search__group">
+                    <label for="checkout" class="search__lbl">Check Out</label>
+                    <input type="date" id="checkout" name="destination" class="search__input" placeholder="Dubai">
+                </div>
             </div>
 
-            <div class="search__group">
-                <label for="checkin" class="search__lbl">Check In</label>
-                <input type="date" id="checkin" name="destination" class="search__input" placeholder="Dubai">
-            </div>
-
-            <div class="search__group">
-                <label for="checkout" class="search__lbl">Check Out</label>
-                <input type="date" id="checkout" name="destination" class="search__input" placeholder="Dubai">
-            </div>
-
-            <button type="submit" class="search__btn">Book <br> Now</button>
         </div>
+        <button type="submit" class="search__btn">Book <br class="hide-on-mobile"> Now</button>
     </form>
 </section>
 
