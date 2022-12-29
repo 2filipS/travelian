@@ -315,10 +315,20 @@ html, body {
   font-size: 16px;
 }
 
+.main {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .travelers-exp .section-header, .gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 101rem;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .travelers-exp .section-header .br, .gallery .section-header .br, .blog .section-header .br, .special-offer .section-header .br, .destinations .section-header .br {
+    display: none;
+  }
 }
 
 .travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
@@ -346,6 +356,14 @@ html, body {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.75rem;
+}
+@media screen and (max-width: 1152px) {
+  .travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
+    display: none;
+  }
 }
 .travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
@@ -553,10 +571,20 @@ html, body {
   font-size: 16px;
 }
 
+.main {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .travelers-exp .section-header, .gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 101rem;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .travelers-exp .section-header .br, .gallery .section-header .br, .blog .section-header .br, .special-offer .section-header .br, .destinations .section-header .br {
+    display: none;
+  }
 }
 
 .travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
@@ -584,6 +612,14 @@ html, body {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.75rem;
+}
+@media screen and (max-width: 1152px) {
+  .travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
+    display: none;
+  }
 }
 .travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
@@ -631,10 +667,37 @@ html, body {
   min-height: 100vh;
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-content: center;
-  padding: 8.75rem 0 8.75rem 11.375rem;
+  max-width: 100vw;
+  width: 100%;
   box-sizing: border-box;
+  gap: 6.25rem;
+  overflow: hidden;
+  margin-left: 11.375rem;
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+}
+@media screen and (max-width: 1440px) {
+  .destinations {
+    margin-left: 1.875rem;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+}
+@media screen and (max-width: 1152px) {
+  .destinations {
+    margin-left: 1.25rem;
+    gap: 3.125rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 1441px) {
+  .destinations {
+    margin-left: calc((100vw - 1440px) * 152 / 480 + 30px); /* fluid value */
+  }
 }
 .destinations .section-header__hdl::before {
   content: "";
@@ -646,20 +709,65 @@ html, body {
   display: block;
   background-color: #FF7757;
 }
-.destinations .section-header__nav-arrows {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 0;
-}
-.destinations__content {
-  overflow: hidden;
-}
-.destinations__content .slider {
+.destinations .slider {
   display: flex;
   gap: 2rem;
+  position: relative;
 }
-.destinations__content .slider__image {
+@media screen and (max-width: 1152px) {
+  .destinations .slider__image {
+    display: none;
+    margin-right: 2.1875rem;
+  }
+  .destinations .slider__image.active {
+    display: block;
+    max-width: 67rem;
+    width: 100%;
+  }
+}
+.destinations .slider__image img {
   cursor: pointer;
+  object-fit: contain;
+}
+.destinations .slider__image img:nth-child(2) {
+  display: none;
+}
+.destinations .slider__image img:nth-child(3) {
+  display: none;
+}
+@media screen and (max-width: 1152px) {
+  .destinations .slider__image img {
+    width: 100%;
+  }
+  .destinations .slider__image img:first-child {
+    display: none;
+  }
+  .destinations .slider__image img:nth-child(2) {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .destinations .slider__image img {
+    width: 100%;
+  }
+  .destinations .slider__image img:nth-child(2) {
+    display: none;
+  }
+  .destinations .slider__image img:nth-child(3) {
+    display: block;
+  }
+}
+.destinations .slider .mobile-active {
+  display: none;
+  position: absolute;
+  bottom: -6.25rem;
+  left: calc(50% - 17px);
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 1152px) {
+  .destinations .slider .mobile-active {
+    display: flex;
+  }
 }
 
 html, body {
@@ -668,12 +776,22 @@ html, body {
 
 html, body {
   font-size: 16px;
+}
+
+.main {
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .travelers-exp .section-header, .gallery .section-header, .blog .section-header, .special-offer .section-header, .destinations .section-header {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 101rem;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .travelers-exp .section-header .br, .gallery .section-header .br, .blog .section-header .br, .special-offer .section-header .br, .destinations .section-header .br {
+    display: none;
+  }
 }
 
 .travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .special-offer .section-header__hdl, .destinations .section-header__hdl {
@@ -701,6 +819,14 @@ html, body {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.75rem;
+}
+@media screen and (max-width: 1152px) {
+  .travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .destinations .section-header__nav-arrows {
+    display: none;
+  }
 }
 .travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
@@ -783,10 +909,20 @@ html, body {
   font-size: 16px;
 }
 
+.main {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .travelers-exp .section-header, .gallery .section-header, .blog .section-header, .destinations .section-header, .special-offer .section-header {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 101rem;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .travelers-exp .section-header .br, .gallery .section-header .br, .blog .section-header .br, .destinations .section-header .br, .special-offer .section-header .br {
+    display: none;
+  }
 }
 
 .travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .blog .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl {
@@ -814,6 +950,14 @@ html, body {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.75rem;
+}
+@media screen and (max-width: 1152px) {
+  .travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .blog .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows {
+    display: none;
+  }
 }
 .travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
@@ -934,10 +1078,20 @@ html, body {
   font-size: 16px;
 }
 
+.main {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .travelers-exp .section-header, .gallery .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 101rem;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .travelers-exp .section-header .br, .gallery .section-header .br, .destinations .section-header .br, .special-offer .section-header .br, .blog .section-header .br {
+    display: none;
+  }
 }
 
 .travelers-exp .section-header__hdl, .gallery .section-header__hdl, .trip-planners .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl {
@@ -965,6 +1119,14 @@ html, body {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.75rem;
+}
+@media screen and (max-width: 1152px) {
+  .travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows {
+    display: none;
+  }
 }
 .travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
@@ -1085,10 +1247,20 @@ html, body {
   font-size: 16px;
 }
 
+.main {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .travelers-exp .section-header, .gallery .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 101rem;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .travelers-exp .section-header .br, .gallery .section-header .br, .destinations .section-header .br, .special-offer .section-header .br, .blog .section-header .br {
+    display: none;
+  }
 }
 
 .travelers-exp .section-header__hdl, .gallery .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl, .trip-planners .section-header__hdl {
@@ -1116,6 +1288,14 @@ html, body {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.75rem;
+}
+@media screen and (max-width: 1152px) {
+  .travelers-exp__nav-arrows, .gallery .section-header__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows {
+    display: none;
+  }
 }
 .travelers-exp__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
@@ -1204,10 +1384,20 @@ html, body {
   font-size: 16px;
 }
 
+.main {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .travelers-exp .section-header, .destinations .section-header, .special-offer .section-header, .blog .section-header, .gallery .section-header {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 101rem;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .travelers-exp .section-header .br, .destinations .section-header .br, .special-offer .section-header .br, .blog .section-header .br, .gallery .section-header .br {
+    display: none;
+  }
 }
 
 .travelers-exp .section-header__hdl, .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl, .trip-planners .section-header__hdl, .gallery .section-header__hdl {
@@ -1235,6 +1425,14 @@ html, body {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.75rem;
+}
+@media screen and (max-width: 1152px) {
+  .travelers-exp__nav-arrows, .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows, .gallery .section-header__nav-arrows {
+    display: none;
+  }
 }
 .travelers-exp__nav-arrows .nav-arrows__btn, .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn {
   background-color: #172432;
@@ -1368,10 +1566,20 @@ html, body {
   font-size: 16px;
 }
 
+.main {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .destinations .section-header, .special-offer .section-header, .blog .section-header, .gallery .section-header, .travelers-exp .section-header {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 101rem;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .destinations .section-header .br, .special-offer .section-header .br, .blog .section-header .br, .gallery .section-header .br, .travelers-exp .section-header .br {
+    display: none;
+  }
 }
 
 .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl, .trip-planners .section-header__hdl, .gallery .section-header__hdl, .travelers-exp .section-header__hdl {
@@ -1399,6 +1607,14 @@ html, body {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.75rem;
+}
+@media screen and (max-width: 1152px) {
+  .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows, .gallery .section-header__nav-arrows, .travelers-exp__nav-arrows {
+    display: none;
+  }
 }
 .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .travelers-exp__nav-arrows .nav-arrows__btn {
   background-color: #172432;
@@ -1492,10 +1708,20 @@ html, body {
   font-size: 16px;
 }
 
+.main {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .destinations .section-header, .special-offer .section-header, .blog .section-header, .gallery .section-header, .travelers-exp .section-header {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 101rem;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .destinations .section-header .br, .special-offer .section-header .br, .blog .section-header .br, .gallery .section-header .br, .travelers-exp .section-header .br {
+    display: none;
+  }
 }
 
 .destinations .section-header__hdl, .special-offer .section-header__hdl, .blog .section-header__hdl, .trip-planners .section-header__hdl, .gallery .section-header__hdl, .travelers-exp .section-header__hdl {
@@ -1523,6 +1749,14 @@ html, body {
   max-width: 10.75rem;
   display: flex;
   gap: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.75rem;
+}
+@media screen and (max-width: 1152px) {
+  .destinations .section-header__nav-arrows, .special-offer .section-header__nav-arrows, .blog .section-header__nav-arrows, .gallery .section-header__nav-arrows, .travelers-exp__nav-arrows {
+    display: none;
+  }
 }
 .destinations .section-header__nav-arrows .nav-arrows__btn, .special-offer .section-header__nav-arrows .nav-arrows__btn, .blog .section-header__nav-arrows .nav-arrows__btn, .gallery .section-header__nav-arrows .nav-arrows__btn, .travelers-exp__nav-arrows .nav-arrows__btn {
   background-color: #172432;
