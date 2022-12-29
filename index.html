@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Travelian</title>
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@400;500&display=swap"
-          rel="stylesheet">
+            rel="stylesheet">
 </head>
 
 <body>
@@ -32,6 +32,9 @@
             <a href="" class="auth-menu__item">Login</a>
             <a href="" class="auth-menu__item auth-menu__item--btn">Sign up</a>
         </nav>
+        <button type="submit" class="header-toggler">
+            <img src="./src/images/hamburger%201.svg" alt="">
+        </button>
     </header>
 
     <div class="lead">
@@ -41,45 +44,47 @@
 
     <form action="" class="search">
         <div class="search__wrapper">
-            <div class="search__group">
-                <label for="destination" class="search__lbl">Destination</label>
-                <input type="text" id="destination" name="destination" class="search__input" placeholder="Dubai">
+            <div class="search__group-wrapper">
+                <div class="search__group">
+                    <label for="destination" class="search__lbl">Destination</label>
+                    <input type="text" id="destination" name="destination" class="search__input" placeholder="Dubai">
+                </div>
+
+                <div class="search__group">
+                    <label for="person" class="search__lbl">Person</label>
+                    <select name="person" id="person" class="search__input search__input--select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="search__group">
-                <label for="person" class="search__lbl">Person</label>
-                <select name="person" id="person" class="search__input search__input--select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+            <div class="search__group-wrapper">
+                <div class="search__group">
+                    <label for="checkin" class="search__lbl">Check In</label>
+                    <input type="date" id="checkin" name="destination" class="search__input" placeholder="Dubai">
+                </div>
+
+                <div class="search__group">
+                    <label for="checkout" class="search__lbl">Check Out</label>
+                    <input type="date" id="checkout" name="destination" class="search__input" placeholder="Dubai">
+                </div>
             </div>
 
-            <div class="search__group">
-                <label for="checkin" class="search__lbl">Check In</label>
-                <input type="date" id="checkin" name="destination" class="search__input" placeholder="Dubai">
-            </div>
-
-            <div class="search__group">
-                <label for="checkout" class="search__lbl">Check Out</label>
-                <input type="date" id="checkout" name="destination" class="search__input" placeholder="Dubai">
-            </div>
-
-            <button type="submit" class="search__btn">Book <br> Now</button>
         </div>
+        <button type="submit" class="search__btn">Book <br class="hide-on-mobile"> Now</button>
     </form>
 </section>
 
 <main class="main">
 
-
     <section class="destinations">
-        <div class="destinations__content">
             <header class="destinations__header section-header">
                 <h2 class="section-header__hdl">Popular Destinations</h2>
-                <p class="section-header__desc">Most popular destinations around the world, from historical places to
+                <p class="section-header__desc">Most popular destinations around the world, from historical places<br class="br"> to
                     natural wonders.</p>
                 <nav class="section-header__nav-arrows">
                     <div class="nav-arrows__btn"></div>
@@ -88,8 +93,10 @@
             </header>
 
             <div class="slider">
-                <a class="slider__image">
+                <a class="slider__image active">
                     <img src="./src/images/destinations-berlin.png" alt="" class="slider__img">
+                    <img src="src/images/berlin-tablet.jpg" alt="" class="slider__img tablet-img">
+                    <img src="src/images/berlin-mobile.png" alt="" class="slider__img tablet-img">
                 </a>
                 <a class="slider__image">
                     <img src="./src/images/destinations-london.png" alt="" class="slider__image">
@@ -100,6 +107,10 @@
                 <a class="slider__image">
                     <img src="./src/images/destinations-lisbon.png" alt="" class="slider__image">
                 </a>
+                <nav class="section-header__nav-arrows mobile-active">
+                    <div class="nav-arrows__btn"></div>
+                    <div class="nav-arrows__btn--next"></div>
+                </nav>
             </div>
         </div>
     </section>
@@ -187,217 +198,7 @@
     </div>
 
 
-    <div class="blog__wrapper">
-        <section class="blog">
-            <header class="blog__header section-header">
-                <h2 class="section-header__hdl">Our Blog</h2>
-                <p class="section-header__desc">An insight the incredible experience in the world</p>
-            </header>
-            <div class="blog__content">
-                <img src="./src/images/blog-img.jpg" alt="" class="blog__image">
-                <div class="blog__text-block">
-                    <h3 class="text-block__hdl">Beautiful Italy <br>
-                        Let’s travel</h3>
-                    <p class="text-block__text">But I must explain to you how all this mistaken idea of denouncing
-                        pleasure
-                        and praising pain was born and I will give you a complete account of the system and expound the
-                        actual teachings of the great explorer of the truth, the master- builder of human happiness. No
-                        one
-                        rejects, dislike, or avoids plasure itself, because it is pleasure, but because those who do not
-                        know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor
-                        again
-                        is there anyone who loves or pursues.</p>
-                    <a href="" class="text-block__read-more">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <section class="trip-planners">
-        <header class="trip-planners__header section-header">
-            <h2 class="section-header__hdl">Trip Planners</h2>
-            <p class="section-header__desc">20 years from now you will be more <br>
-                disappointed by the things that you didn’t do. <br>
-                Stop regretting and start travelling, start <br>
-                throwing off the bowlines.
-            </p>
-            <div class="section-header__btn-wrapper">
-                <button class="section-header__trip-plans-btn">
-                    View all trip plans
-                </button>
-            </div>
-        </header>
-
-        <div class="trip-planners__content">
-            <img src="src/images/trip-planners-img.png" alt="" class="trip-planners__image">
-        </div>
-    </section>
-    <div class="gallery__wrapper">
-        <section class="gallery">
-            <header class="gallery__header section-header">
-                <h2 class="section-header__hdl">Destination Gallery</h2>
-                <p class="section-header__desc">Our photo gallery on trip</p>
-                <nav class="section-header__nav-arrows">
-                    <div class="nav-arrows__btn"></div>
-                    <div class="nav-arrows__btn--next"></div>
-                </nav>
-            </header>
-            <div class="gallery__content">
-                <img src="src/images/gallery1.png" alt="" class="gallery__image">
-                <img src="src/images/gallery2.png" alt="" class="gallery__image">
-                <img src="src/images/gallery3.png" alt="" class="gallery__image">
-                <img src="src/images/gallery4.png" alt="" class="gallery__image">
-            </div>
-        </section>
-    </div>
-    <section class="travelers-exp">
-        <header class="travelers-exp__header section-header">
-            <h2 class="section-header__hdl">Traveler’s Experiences</h2>
-            <p class="section-header__desc">Here some awesome feedback from our travelers</p>
-        </header>
-        <div class="travelers-exp__content">
-            <div class="travelers-exp__client client-box">
-                <img src="src/images/Avatar1.png" class="client-box__avatar" alt="">
-                <div class="client-box__wrapper">
-                    <p class="client-box__review">
-                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
-                        was born and I will give you a complete account of the system and expound the actual teachings
-                        of the great explorer of the truth, the master- builder of human happiness.
-                    </p>
-                    <div class="client-box__stars">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                    </div>
-                    <div class="client-box__user">
-                        <div class="client-box__name">John Doe</div>
-                        <div class="client-box__role">Accountant</div>
-                    </div>
-                </div>
-            </div>
-            <div class="travelers-exp__client client-box">
-                <img src="src/images/Avatar2.png" class="client-box__avatar" alt="">
-                <div class="client-box__wrapper">
-                    <p class="client-box__review">
-                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
-                        was born and I will give you a complete account of the system and expound the actual teachings
-                        of the great explorer of the truth, the master- builder of human happiness.
-                    </p>
-                    <div class="client-box__stars">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                    </div>
-                    <div class="client-box__user">
-                        <div class="client-box__name">John Smith</div>
-                        <div class="client-box__role">Journalist, HWO Newst</div>
-                    </div>
-                </div>
-            </div>
-            <div class="travelers-exp__client client-box">
-                <img src="src/images/Avatar3.png" class="client-box__avatar" alt="">
-                <div class="client-box__wrapper">
-                    <p class="client-box__review">
-                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
-                        was born and I will give you a complete account of the system and expound the actual teachings
-                        of the great explorer of the truth, the master- builder of human happiness.
-                    </p>
-                    <div class="client-box__stars">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                        <img src="src/images/star.svg" alt="" class="client-box__star">
-                    </div>
-                    <div class="client-box__user">
-                        <div class="client-box__name">Tamara Bellis</div>
-                        <div class="client-box__role">Managing Director, JTH</div>
-                    </div>
-                </div>
-            </div>
-            <nav class="travelers-exp__nav-arrows">
-                <div class="nav-arrows__btn"></div>
-                <div class="nav-arrows__btn--next"></div>
-            </nav>
-        </div>
-
-
-    </section>
-
 </main>
 
-<footer class="footer">
-    <div class="footer__logo-wrapper">
-        <a href="" class="footer__logo logo">
-            <img src="./src/images/Logo.svg" alt="Travelian logo" class="logo__img">
-        </a>
-        <p class="footer__copyright">Copyright © Travellian 2020 All rights reserved</p>
-    </div>
-
-    <nav class="footer__menu">
-        <h6 class="menu__hdl">Menu</h6>
-        <div class="menu__items">
-            <a href="" class="menu__item">Home</a>
-            <a href="" class="menu__item">Explore</a>
-            <a href="" class="menu__item">Travel</a>
-            <a href="" class="menu__item">Blog</a>
-            <a href="" class="menu__item">Pricing</a>
-        </div>
-    </nav>
-    <nav class="footer__menu">
-        <h6 class="menu__hdl">Information</h6>
-        <div class="menu__items">
-            <a href="" class="menu__item">Destinations</a>
-            <a href="" class="menu__item">Supports</a>
-            <a href="" class="menu__item">Terms & Conditions</a>
-            <a href="" class="menu__item">Privacy</a>
-        </div>
-    </nav>
-    <nav class="footer__menu">
-        <h6 class="menu__hdl">Contact Info</h6>
-        <div class="menu__items">
-            <div class="menu__item">+123 456 789</div>
-            <div class="menu__item">info@travellian.com</div>
-            <div class="menu__item">1245, New York, USA</div>
-        </div>
-    </nav>
-    <nav class="footer__menu">
-        <h6 class="menu__hdl">Follow us on</h6>
-        <div class="menu__items">
-            <a href="" class="menu__item">
-                <img src="src/images/facebook-icon.png" alt="" class="menu__socials-icon">
-            </a>
-            <a href="" class="menu__item">
-                <img src="src/images/pinterest-icon.png" alt="" class="menu__socials-icon">
-            </a>
-            <a href="" class="menu__item">
-                <img src="src/images/instagram-icon.png" alt="" class="menu__socials-icon">
-            </a>
-            <a href="" class="menu__item">
-                <img src="src/images/twitter-icon.png" alt="" class="menu__socials-icon">
-            </a>
-        </div>
-
-    </nav>
-
-</footer>
-
-<form action="" class="newsltr">
-    <h1 class="newsltr__hdl">Our Newsletter</h1>
-    <div class="newsltr__wrapper">
-        <div class="newsltr__group">
-            <label for="email" class="newsltr__label">Email</label>
-            <input type="email" name="newsletter-email" id="email" class="newsltr__input"
-                   placeholder="Enter your email">
-        </div>
-        <button type="submit" class="newsltr__btn">Subscribe</button>
-    </div>
-</form>
 </body>
 </html>
