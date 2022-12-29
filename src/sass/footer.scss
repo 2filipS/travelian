@@ -1,0 +1,59 @@
+@import "variables";
+@import "helpers";
+
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: toRem(16px);
+}
+
+.footer{
+    background-color: $input-font-color;
+    padding-top: toRem(240px);
+    padding-bottom: toRem(140px);
+    padding-inline: toRem(182px);
+    display: flex;
+    justify-content: space-between;
+    gap: toRem(159.5px);
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $primary-font-color;
+    &__logo-wrapper{
+        @extend %flex-column;
+    }
+    &__logo{
+
+    }
+    &__copyright{
+        font-size: 14px;
+        margin: 0;
+    }
+    &__menu{
+        @extend %flex-column;
+        .menu__hdl{
+            font-size: 24px;
+            margin: 0;
+            font-weight: 500;
+        }
+        .menu__items{
+            @extend %flex-column;
+            gap: toRem(12px);
+            .menu__item{
+                font-size: toRem(18px);
+                text-decoration: none;
+                color: $primary-font-color;
+            }
+        }
+        .menu__socials-icon{
+
+        }
+    }
+    &__menu:last-child .menu__items{
+        display: flex;
+        flex-direction: row;
+        gap: toRem(24px);
+    }
+
+}

@@ -1,0 +1,71 @@
+@import "variables";
+@import "helpers";
+
+.newsltr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: toRem(100px);
+    padding: toRem(60px) toRem(80px);
+    max-width: toRem(1262px);
+    position: absolute;
+    bottom: toRem(454px);
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: $secondary-color;
+    border-radius: toRem(26px);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    &__hdl {
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        color: $secondary-font-color;
+        margin: 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: toRem(32px);
+        min-width: toRem(567px);
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(16px);
+        flex-grow: 1;
+    }
+
+    &__label {
+        color: $secondary-font-color;
+    }
+
+    &__input {
+        padding: toRem(24px) toRem(40px);
+        border-width: 0;
+        background-color: #FFE8D4;
+        border-radius: toRem(12px);
+
+    }
+    &__input::placeholder {
+        color: $primary-color;
+    }
+
+    &__btn {
+        padding: toRem(24.5px) toRem(34.5px);
+        border-radius: 12px;
+        background-color: $primary-color;
+        color: $primary-font-color;
+        border-width: 0;
+        cursor: pointer;
+    }
+}

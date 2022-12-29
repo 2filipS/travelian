@@ -1,15 +1,20 @@
 @import "variables";
 @import "helpers";
 
+.gallery__wrapper{
+    margin: toRem(140px) 0 toRem(140px) toRem(182px);
+}
 
-.destinations {
+.gallery {
     min-height: 100vh;
     background-color: $secondary-color;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: toRem(140px) 0 toRem(140px) toRem(182px);
-    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: toRem(100px);
+    &__header {
+
+    }
+
     .section-header {
         @extend %section-header;
 
@@ -21,7 +26,7 @@
                 position: absolute;
                 bottom: toRem(-4px);
                 left: 0;
-                width: toRem(365px);
+                width: toRem(283px);
                 height: toRem(3px);
                 display: block;
                 background-color: $primary-color;
@@ -49,19 +54,18 @@
     }
 
     &__content {
-        overflow: hidden;
         display: flex;
-        flex-direction: column;
-        gap: toRem(100px);
-        .slider {
-            display: flex;
-            gap: toRem(32px);
-            &__image {
-                cursor: pointer;
-            }
-        }
+        justify-content: space-between;
+        gap: 32px;
+        max-width: toRem(1556px);
+        align-items: center;
     }
 
+    &__image {
+        max-height: toRem(570px);
+    }
+
+    &__image:nth-child(2) {
+        padding-bottom: toRem(75px);
+    }
 }
-
-

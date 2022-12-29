@@ -20,5 +20,8 @@
   "homepage": "https://github.com/2filips/travelian#readme",
   "devDependencies": {
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
   }
 }
