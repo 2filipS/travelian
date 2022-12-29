@@ -31,6 +31,7 @@
     }
     @media screen and (max-width: 1440px) {
         min-height: calc(100vh + 50px);
+        gap: toRem(100px);
     }
 
     .header-toggler {
@@ -132,14 +133,13 @@
         font-weight: 400;
         font-size: toRem(24px);
         display: inline-block;
-        @media screen and (min-width: 1440px) {
-            padding-bottom: toRem(30px);
-        }
+        margin-bottom: 0;
         @media screen and (max-width: 1440px) {
-            padding-bottom: toRem(70px);
+            padding-bottom: toRem(40px);
         }
         @media screen and (max-width: 1152px) {
             font-size: toRem(20px);
+            padding-bottom: 0;
         }
         @media screen and (max-width: 768px) {
             font-size: toRem(18px);

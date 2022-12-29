@@ -38,16 +38,7 @@
         &__hdl {
             @extend %hdl;
 
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: toRem(-4px);
-                left: 0;
-                width: toRem(365px);
-                height: toRem(3px);
-                display: block;
-                background-color: $primary-color;
-            }
+
         }
 
         &__desc {
@@ -56,7 +47,6 @@
 
         &__nav-arrows {
             @extend %nav-arrows;
-
 
             .nav-arrows__btn {
                 @extend %nav-arrows__btn;
@@ -74,11 +64,6 @@
         gap: toRem(32px);
         //overflow: hidden;
         position: relative;
-        @media screen and (max-width: 1152px) {
-            //max-height: toRem(690px);
-            //flex-direction: column;
-            //align-items: center;
-        }
 
         &__image {
             @media screen and (max-width: 1152px) {
@@ -123,12 +108,11 @@
 
         .mobile-active {
             display: none;
-            position: absolute;
-            bottom: toRem(-100px);
-            left: calc(50% - 17px);
-            transform: translateX(-50%);
             @media screen and (max-width: 1152px) {
                 display: flex;
+                bottom: toRem(-100px);
+                left: calc(50% - 17px);
+                transform: translateX(-50%);
             }
         }
     }

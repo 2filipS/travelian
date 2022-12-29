@@ -17,10 +17,15 @@ $base-font-size: 16px;
   width: 100%;
   max-width: toRem(1616px);
   position: relative;
+  padding-right: toRem(30px);
+  box-sizing: border-box;
   @media screen and (min-width: 1440px){
     .br {
       display: none;
     }
+  }
+  @media screen and (min-width: 1441px) {
+    padding-right: toRem(60px);
   }
 }
 
@@ -34,6 +39,22 @@ $base-font-size: 16px;
   padding-bottom: toRem(18px);
   display: inline-block;
   position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: toRem(-4px);
+    left: 0;
+    width: 60%;
+    height: toRem(3px);
+    display: block;
+    background-color: $primary-color;
+  }
+  @media screen and (max-width: 1152px){
+    font-size: toRem(54px);
+  }
+  @media screen and (max-width: 768px){
+    font-size: toRem(40px);
+  }
 }
 %desc{
   width: 100%;
@@ -42,11 +63,20 @@ $base-font-size: 16px;
   font-size: toRem(24px);
   font-weight: 400;
   color: $secondary-font-color;
+  margin-right: toRem(20px);
+  @media screen and (max-width: 1152px){
+    font-size: toRem(20px);
+  }
+  @media screen and (max-width: 768px){
+    font-size: toRem(18px);
+  }
 }
 
 %nav-arrows{
   max-width: toRem(172px);
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   gap: 40px;
   position: absolute;
   bottom: toRem(24px);
