@@ -90,7 +90,7 @@
 
 .section-header {
     width: 100%;
-    max-width: toRem(1616px);
+    max-width: toRem(1556px);
     position: relative;
     box-sizing: border-box;
     @media screen and (min-width: 1440px) {
@@ -147,7 +147,7 @@
         }
     }
     .section-nav{
-        right: toRem(60px);
+        right: 0;
         bottom: toRem(24px);
     }
 }

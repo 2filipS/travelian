@@ -1,62 +1,62 @@
-@import "variables";
-@import "helpers";
+@import "../abstracts/variables";
+@import "../abstracts/helpers";
 
 
-.blog{
-    min-height: 100vh;
+.blog {
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
     gap: toRem(100px);
-    .section-header{
-        @extend %section-header;
-        &__hdl{
-            @extend %hdl;
-            &::before{
-                content: '';
-                position: absolute;
-                bottom: toRem(-4px);
-                left: 0;
-                width: toRem(150px);
-                height: toRem(3px);
-                display: block;
-                background-color: $primary-color;
-            }
-        }
-        &__desc{
-            @extend %desc;
-        }
-        &__nav-arrows{
-            @extend %nav-arrows;
-            bottom: toRem(24px);
-            right: toRem(182px);
-            .nav-arrows__btn{
-                @extend %nav-arrows__btn;
-            }
-            .nav-arrows__btn--next{
-                @extend %nav-arrows__btn--next;
-            }
-        }
+    @media screen and (max-width: 1440px) {
+        margin-left: toRem(30px);
+        margin-right: toRem(30px);
     }
-    &__content{
+    @media screen and (max-width: 1152px) {
+        margin-left: toRem(20px);
+        margin-right: toRem(20px);
+        gap: toRem(50px);
+    }
+    @media (min-width: 1441px) {
+        margin-left: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
+        margin-right: toRem(30px);
+    }
+
+    &__content {
         display: flex;
+        align-items: center;
+        max-height: toRem(873px);
         max-width: toRem(1556px);
-        .text-block__hdl{
+        width: 100%;
+        gap: toRem(32px);
+        @media screen and (max-width: 1440px) {
+            max-height: revert;
+        }
+        @media screen and (max-width: 1152px) {
+            flex-direction: column;
+        }
+
+        .text-block__hdl {
             font-family: 'Playfair Display', serif;
             font-style: normal;
             font-weight: 400;
             font-size: 54px;
             line-height: 1.33;
             margin-bottom: toRem(24px);
+            margin-top: 0;
         }
-        .text-block__text{
+
+        .text-block__text {
             font-family: 'Rubik', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
             line-height: 2.17;
+            @media screen and (max-width: 1440px) {
+                font-size: toRem(18px);
+            }
         }
-        .text-block__read-more{
+
+        .text-block__read-more {
             font-family: 'Rubik', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -66,7 +66,7 @@
             position: relative;
             display: inline-block;
 
-            &::after{
+            &::after {
                 content: '';
                 background-image: url('#{$imgs-path}/readmore-arrow.svg');
                 background-repeat: no-repeat;
@@ -79,9 +79,25 @@
             }
         }
     }
-    &__text-block{
-        margin-left: toRem(32px);
-        margin-top: toRem(106px);
-        margin-bottom: toRem(106px);
+
+    &__image {
+        max-height: toRem(873px);
+        max-width: toRem(762px);
+        width: 50%;
+        object-fit: contain;
+        border-radius: toRem(26px);
+        @media screen and (max-width: 1152px) {
+            width: 100%;
+            object-fit: cover;
+            max-width: revert;
+            max-height: toRem(555px);
+        }
+    }
+
+    &__text-block {
+        width: 50%;
+        @media screen and (max-width: 1152px) {
+            width: 100%;
+        }
     }
 }

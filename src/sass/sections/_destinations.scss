@@ -31,6 +31,13 @@
         margin-left: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
     }
 
+    .destinations__header {
+        max-width: toRem(1616px);
+        .section-nav {
+            right: toRem(60px);
+        }
+    }
+
     .destinations__slider {
         display: flex;
         gap: toRem(32px);
