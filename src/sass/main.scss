@@ -1,14 +1,18 @@
-@import "normalize";
-@import "intro";
-@import "destinations";
-@import "special-offer";
-//@import "blog";
-//@import "trip-planners";
-//@import "gallery";
-//@import "travelers-experiences";
-//@import "footer";
-//@import "newsletter";
+@import "./base/normalize";
+@import "./base/typography";
 
-body{
-    position: relative;
-}
+@import "./components/buttons";
+@import "./components/newsletter";
+@import "./components/slider";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./sections/intro";
+@import "./sections/destinations";
+@import "./sections/special-offer";
+@import "./sections/blog";
+@import "./sections/trip-planners";
+@import "./sections/gallery";
+@import "./sections/travelers-experiences";
+
