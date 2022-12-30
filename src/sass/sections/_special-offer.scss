@@ -1,5 +1,5 @@
-@import "variables";
-@import "helpers";
+@import "../abstracts/variables";
+@import "../abstracts/helpers";
 
 
 .special-offer {
@@ -20,42 +20,7 @@
     @media (min-width: 1441px) {
         margin-left: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
     }
-    &__header {
 
-    }
-
-    .section-header {
-        @extend %section-header;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-
-        &__hdl {
-            @extend %hdl;
-            &::before {
-                left: auto;
-                right: 0;
-            }
-        }
-
-        &__desc {
-            @extend %desc;
-            text-align: right;
-        }
-
-        &__nav-arrows {
-            @extend %nav-arrows;
-            left: 0;
-
-            .nav-arrows__btn {
-                @extend %nav-arrows__btn;
-            }
-
-            .nav-arrows__btn--next {
-                @extend %nav-arrows__btn--next;
-            }
-        }
-    }
 
     &__content {
         display: flex;
