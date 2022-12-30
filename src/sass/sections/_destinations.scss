@@ -1,5 +1,5 @@
-@import "variables";
-@import "helpers";
+@import "../abstracts/variables";
+@import "../abstracts/helpers";
 
 
 .destinations {
@@ -13,10 +13,10 @@
     width: 100%;
     box-sizing: border-box;
     gap: toRem(100px);
-    overflow: hidden;
     margin-left: toRem(182px);
     padding-top: toRem(140px);
     padding-bottom: toRem(140px);
+    position: relative;
     @media screen and (max-width: 1440px) {
         margin-left: toRem(30px);
         padding-top: toRem(100px);
@@ -32,92 +32,43 @@
         margin-left: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
     }
 
-    .section-header {
-        @extend %section-header;
-
-        &__hdl {
-            @extend %hdl;
-
-
-        }
-
-        &__desc {
-            @extend %desc;
-        }
-
-        &__nav-arrows {
-            @extend %nav-arrows;
-
-            .nav-arrows__btn {
-                @extend %nav-arrows__btn;
-            }
-
-            .nav-arrows__btn--next {
-                @extend %nav-arrows__btn--next;
-            }
-        }
-    }
-
-
-    .slider {
+    .destinations__slider {
         display: flex;
         gap: toRem(32px);
-        //overflow: hidden;
-        position: relative;
 
-        &__image {
-            @media screen and (max-width: 1152px) {
+        @media screen and (max-width: 1152px) {
+            max-width: calc(100vw - toRem(53px));
+            width: 100%;
+            & a:not(.active) {
                 display: none;
-                margin-right: toRem(35px);
-                &.active {
-                    display: block;
-                    max-width: toRem(1072px);
-                    width: 100%;
-                }
             }
         }
 
-        &__image img {
+        .destinations__image {
+            min-width: toRem(497px);
+            min-height: toRem(661px);
             cursor: pointer;
-            object-fit: contain;
-            &:nth-child(2) {
-                display: none;
-            }
-            &:nth-child(3) {
-                display: none;
-            }
             @media screen and (max-width: 1152px) {
-                width: 100%;
-                &:first-child {
-                    display: none;
-                }
-                &:nth-child(2) {
-                    display: block;
-                }
-            }
-            @media screen and (max-width: 768px) {
-                width: 100%;
-                &:nth-child(2) {
-                    display: none;
-                }
-                &:nth-child(3) {
+                display: none;
+                &.active {
+                    min-height: toRem(288px);
+                    min-width: toRem(320px);
                     display: block;
                 }
             }
         }
 
-        .mobile-active {
-            display: none;
+        .destinations__img {
+            border-radius: toRem(26px);
+            object-fit: cover;
+            width: 100%;
+            min-height: 100%;
             @media screen and (max-width: 1152px) {
-                display: flex;
-                bottom: toRem(-100px);
-                left: calc(50% - 17px);
-                transform: translateX(-50%);
+                object-fit: contain;
             }
         }
+
     }
-
-
 }
 
 

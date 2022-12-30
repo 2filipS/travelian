@@ -1,0 +1,62 @@
+@import "../abstracts/variables";
+@import "../abstracts/helpers";
+
+.nav-arrows{
+    max-width: toRem(172px);
+    max-height: toRem(60px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: toRem(40px);
+    position: absolute;
+    z-index: 42;
+    @media screen and (max-width: 1152px){
+        display: none;
+    }
+    &__btn{
+        display: inline-block;
+        width: toRem(60px);
+        height: toRem(60px);
+        border-radius: toRem(12px);
+        cursor: pointer;
+        position: relative;
+        border: none;
+        &::after{
+            content: '';
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: toRem(12px);
+            height: toRem(22px);
+            right: 50%;
+            top: 50%;
+            position: absolute;
+        }
+        &--left{
+            background-color: $input-font-color;
+            &::after{
+                background-image: url('#{$imgs-path}/arrow2.svg');
+                transform: translate(25%, -50%);
+            }
+        }
+        &--right {
+            background-color: $primary-color;
+            &::after{
+                background-image: url('#{$imgs-path}/arrow2.svg');
+                transform: translate(65%, -50%) scaleX(-1);
+            }
+        }
+    }
+    &.mobile-active {
+        display: none;
+        @media screen and (max-width: 1152px) {
+            display: flex;
+        }
+        @media screen and (max-width: 768px) {
+        }
+    }
+    .slider &{
+        bottom: toRem(-100px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
