@@ -1,9 +1,6 @@
 @import "variables";
 @import "helpers";
 
-.blog__wrapper{
-    margin: toRem(140px) 0 toRem(140px) toRem(182px);
-}
 
 .blog{
     min-height: 100vh;
@@ -31,7 +28,6 @@
         }
         &__nav-arrows{
             @extend %nav-arrows;
-            position: absolute;
             bottom: toRem(24px);
             right: toRem(182px);
             .nav-arrows__btn{

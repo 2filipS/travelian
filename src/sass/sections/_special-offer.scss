@@ -62,17 +62,6 @@
         gap: toRem(32px);
         margin-right: toRem(20px);
         position: relative;
-        .mobile-active {
-            display: none;
-            @media screen and (max-width: 1152px) {
-                display: flex;
-                bottom: toRem(-100px);
-                left: calc(50% - 17px);
-                transform: translateX(-50%);
-            }
-            @media screen and (max-width: 768px) {
-            }
-        }
     }
 
 }
