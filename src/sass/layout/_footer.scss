@@ -2,6 +2,7 @@
 @import "../abstracts/helpers";
 
 
+
 %flex-column{
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@
     background-color: $input-font-color;
     padding-top: toRem(240px);
     padding-bottom: toRem(140px);
-    padding-inline: toRem(182px);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: toRem(159.5px);
@@ -21,6 +22,19 @@
     font-weight: 400;
     color: $primary-font-color;
     position: relative;
+    box-sizing: border-box;
+    @media (min-width: 1441px) {
+        padding-left: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
+        padding-right: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
+    }
+    @media screen and (max-width: 1440px) {
+        padding-left: toRem(30px);
+        padding-right: toRem(30px);
+    }
+    @media screen and (max-width: 1152px) {
+        flex-direction: column;
+        gap: toRem(60px);
+    }
     &__logo-wrapper{
         @extend %flex-column;
     }
@@ -46,15 +60,13 @@
                 text-decoration: none;
                 color: $primary-font-color;
             }
+            &.row {
+                flex-direction: row;
+            }
         }
         .menu__socials-icon{
 
         }
-    }
-    &__menu:last-child .menu__items{
-        display: flex;
-        flex-direction: row;
-        gap: toRem(24px);
     }
 
 }
