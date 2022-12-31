@@ -57,6 +57,7 @@
         @media screen and (max-width: 1152px) {
             flex-direction: column;
             width: 100%;
+            gap: toRem(50px);
         }
     }
 
