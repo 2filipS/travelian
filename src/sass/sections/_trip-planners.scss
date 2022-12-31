@@ -1,50 +1,33 @@
-@import "variables";
-@import "helpers";
+@import "../abstracts/variables";
+@import "../abstracts/helpers";
 
 .trip-planners{
     min-height: toRem(825px);
     display: flex;
-    padding-left: toRem(182px);
     align-items: center;
-    .section-header{
-        max-width: toRem(394px);
-        padding-top: toRem(93px);
-        &__hdl{
-            @extend %hdl;
-
-            &::before{
-                content: '';
-                position: absolute;
-                bottom: toRem(-4px);
-                left: 0;
-                width: toRem(231px);
-                height: toRem(3px);
-                display: block;
-                background-color: $primary-color;
-            }
-        }
-        &__desc{
-            @extend %desc;
-            font-size: 18px;
-        }
-        &__trip-plans-btn{
-            width: toRem(186px);
-            height: toRem(61px);
+    gap: toRem(100px);
+    @media (min-width: 1441px) {
+        margin-left: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
+    }
+    @media screen and (max-width: 1440px) {
+        margin-left: toRem(30px);
+    }
+    @media screen and (max-width: 1152px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-inline: toRem(20px);
+    }
+        .trip-planners__btn{
             border-radius: toRem(12px);
             background-color: $primary-color;
-            border-width: 0;
+            border: none;
             color: $primary-font-color;
-            font-family: 'Rubik', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
             cursor: pointer;
-        }
-        &__btn-wrapper{
-            margin-left: toRem(40px);
-            margin-top: toRem(32px);
-            width: toRem(186px);
-            position: relative;
+            position: absolute;
+            left: toRem(60px);
+            bottom: toRem(-100px);
+            padding: toRem(20px);
+            min-width: toRem(186px);
             &::before{
                 content: '';
                 position: absolute;
@@ -68,12 +51,88 @@
                 z-index: -1;
             }
         }
-    }
-    
-
     &__content{
-        position: absolute;
-        right: 0;
+        display: flex;
+        gap: toRem(32px);
+        @media screen and (max-width: 1152px) {
+            flex-direction: column;
+            width: 100%;
+        }
     }
 
+    &__trip{
+
+    }
+}
+
+.trip {
+    width: toRem(300px);
+    height: toRem(545px);
+    position: relative;
+    @media screen and (max-width: 1152px) {
+        width: 100%;
+        height: revert;
+    }
+    &.active {
+        .trip__info {
+            width: 100%;
+        }
+    }
+    &:not(.active){
+        transform: translateY(14%);
+        .trip__info {
+            opacity: 0;
+        }
+        @media screen and (max-width: 1152px) {
+            transform: translateY(0);
+            .trip__info {
+                opacity: 1;
+            }
+        }
+    }
+    &__image {
+        height: toRem(400px);
+        margin-bottom: toRem(20px);
+        overflow: hidden;
+        @media screen and (max-width: 1152px) {
+            width: 100%;
+            height: revert;
+        }
+    }
+    &__img {
+        object-fit: cover;
+        min-height: 100%;
+        width: 100%;
+        border-radius: toRem(26px);
+        aspect-ratio: 2/1;
+    }
+    &__info {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: toRem(12px);
+        @media screen and (max-width: 1152px) {
+            position: relative;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__type {
+
+    }
+    &__price {
+
+    }
+    &__dest {
+        color: $input-font-color;
+    }
+    &__rating {
+
+    }
+    &__duration {
+
+    }
 }

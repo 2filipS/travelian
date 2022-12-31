@@ -243,15 +243,105 @@
                     Stop regretting and start travelling, start <br>
                     throwing off the bowlines.
                 </p>
-                <div class="section-header__btn-wrapper">
-                    <button class="section-header__trip-plans-btn">
-                        View all trip plans
-                    </button>
-                </div>
+                <button class="trip-planners__btn font-sm">
+                    View all trip plans
+                </button>
             </header>
 
+
             <div class="trip-planners__content">
-                <img src="src/images/trip-planners-img.png" alt="" class="trip-planners__image">
+                <div class="trip-planners__trip trip">
+                    <div class="trip__image">
+                        <img src="./src/images/trip-planner-rome.png" alt="" class="trip__img">
+                    </div>
+                    <div class="trip__info">
+                        <div class="row font-sm">
+                            <div class="trip__type">GUIDED TOUR</div>
+                            <div class="trip__price">&euro;99/Day</div>
+                        </div>
+
+                        <div class="trip__dest font-xl font-family-serif font-bold">Paris City Tour</div>
+                        <div class="row">
+                            <div class="trip__rating">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                            </div>
+                            <div class="trip__duration">7 Days tour</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip-planners__trip trip active">
+                    <div class="trip__image">
+                        <img src="./src/images/trip-planner-paris.png" alt="" class="trip__img">
+                    </div>
+                    <div class="trip__info">
+                        <div class="row font-sm">
+                            <div class="trip__type">GUIDED TOUR</div>
+                            <div class="trip__price">&euro;99/Day</div>
+                        </div>
+
+                        <div class="trip__dest font-xl font-family-serif font-bold">Paris City Tour</div>
+                        <div class="row">
+                            <div class="trip__rating">
+                                    <img src="src/images/star.svg" alt="" class="client-box__star">
+                                    <img src="src/images/star.svg" alt="" class="client-box__star">
+                                    <img src="src/images/star.svg" alt="" class="client-box__star">
+                                    <img src="src/images/star.svg" alt="" class="client-box__star">
+                                    <img src="src/images/star.svg" alt="" class="client-box__star">
+                            </div>
+                            <div class="trip__duration">7 Days tour</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip-planners__trip trip">
+                    <div class="trip__image">
+                        <img src="./src/images/trip-planner-barcelona.png" alt="" class="trip__img">
+                    </div>
+                    <div class="trip__info">
+                        <div class="row font-sm">
+                            <div class="trip__type">GUIDED TOUR</div>
+                            <div class="trip__price">&euro;99/Day</div>
+                        </div>
+
+                        <div class="trip__dest font-xl font-family-serif font-bold">Paris City Tour</div>
+                        <div class="row">
+                            <div class="trip__rating">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                            </div>
+                            <div class="trip__duration">7 Days tour</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip-planners__trip trip">
+                    <div class="trip__image">
+                        <img src="./src/images/trip-planner-budapest.png" alt="" class="trip__img">
+                    </div>
+                    <div class="trip__info">
+                        <div class="row font-sm">
+                            <div class="trip__type">GUIDED TOUR</div>
+                            <div class="trip__price">&euro;99/Day</div>
+                        </div>
+
+                        <div class="trip__dest font-xl font-family-serif font-bold">Paris City Tour</div>
+                        <div class="row">
+                            <div class="trip__rating">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                                <img src="src/images/star.svg" alt="" class="client-box__star">
+                            </div>
+                            <div class="trip__duration">7 Days tour</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -411,20 +501,20 @@
             </div>
 
         </nav>
-
+        <form action="" class="newsltr">
+            <h1 class="newsltr__hdl">Our Newsletter</h1>
+            <div class="newsltr__wrapper">
+                <div class="newsltr__group">
+                    <label for="email" class="newsltr__label">Email</label>
+                    <input type="email" name="newsletter-email" id="email" class="newsltr__input"
+                            placeholder="Enter your email">
+                </div>
+                <button type="submit" class="newsltr__btn">Subscribe</button>
+            </div>
+        </form>
     </footer>
 
-    <form action="" class="newsltr">
-        <h1 class="newsltr__hdl">Our Newsletter</h1>
-        <div class="newsltr__wrapper">
-            <div class="newsltr__group">
-                <label for="email" class="newsltr__label">Email</label>
-                <input type="email" name="newsletter-email" id="email" class="newsltr__input"
-                        placeholder="Enter your email">
-            </div>
-            <button type="submit" class="newsltr__btn">Subscribe</button>
-        </div>
-    </form>
+
 
 </main>
 

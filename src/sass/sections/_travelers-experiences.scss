@@ -1,5 +1,5 @@
-@import "variables";
-@import "helpers";
+@import "../abstracts/variables";
+@import "../abstracts/helpers";
 
 .travelers-exp {
     min-height: 100vh;
@@ -12,28 +12,6 @@
     overflow: hidden;
     position: relative;
     gap: toRem(100px);
-    .section-header {
-        @extend %section-header;
-
-        &__hdl {
-            @extend %hdl;
-
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: toRem(-4px);
-                left: 0;
-                width: toRem(347px);
-                height: toRem(3px);
-                display: block;
-                background-color: $primary-color;
-            }
-        }
-
-        &__desc {
-            @extend %desc;
-        }
-    }
 
     &__content {
         display: flex;
@@ -41,18 +19,6 @@
         gap: toRem(32px);
     }
 
-    &__nav-arrows {
-        @extend %nav-arrows;
-        position: absolute;
-        bottom: toRem(-160px);
-        left: toRem(1384px);
-        .nav-arrows__btn{
-            @extend %nav-arrows__btn;
-        }
-        .nav-arrows__btn--next{
-            @extend %nav-arrows__btn--next;
-        }
-    }
 }
 
 .client-box {

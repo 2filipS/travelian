@@ -1,5 +1,5 @@
-@import "variables";
-@import "helpers";
+@import "../abstracts/variables";
+@import "../abstracts/helpers";
 
 .gallery__wrapper{
     margin: toRem(140px) 0 toRem(140px) toRem(182px);
@@ -13,44 +13,6 @@
     gap: toRem(100px);
     &__header {
 
-    }
-
-    .section-header {
-        @extend %section-header;
-
-        &__hdl {
-            @extend %hdl;
-
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: toRem(-4px);
-                left: 0;
-                width: toRem(283px);
-                height: toRem(3px);
-                display: block;
-                background-color: $primary-color;
-            }
-        }
-
-        &__desc {
-            @extend %desc;
-        }
-
-        &__nav-arrows {
-            @extend %nav-arrows;
-            position: absolute;
-            bottom: toRem(24px);
-            right: 0;
-
-            .nav-arrows__btn {
-                @extend %nav-arrows__btn;
-            }
-
-            .nav-arrows__btn--next {
-                @extend %nav-arrows__btn--next;
-            }
-        }
     }
 
     &__content {
