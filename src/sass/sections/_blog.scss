@@ -18,7 +18,7 @@
     }
     @media (min-width: 1441px) {
         margin-left: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
-        margin-right: toRem(30px);
+        margin-right: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
     }
 
     &__content {
