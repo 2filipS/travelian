@@ -3,19 +3,35 @@
 
 .newsltr {
     display: flex;
-    flex-wrap: wrap;
-    gap: toRem(100px);
     padding: toRem(60px) toRem(80px);
+    gap: toRem(100px);
     max-width: toRem(1262px);
     position: absolute;
     bottom: toRem(454px);
-    right: 0;
-    left: 0;
-    margin: auto;
+    left: toRem(90px);
+    right: toRem(90px);
+    margin-inline: auto;
     box-sizing: border-box;
     background-color: $secondary-color;
     border-radius: toRem(26px);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    @media screen and (min-width: 1441px) {
+
+    }
+
+    @media screen and (max-width: 1440px) {
+        padding: toRem(60px) toRem(40px);
+        gap: toRem(60px);
+        left: toRem(36px);
+        right: toRem(36px);
+    }
+    @media screen and (max-width: 1152px) {
+        left: toRem(20px);
+        right: toRem(20px);
+        flex-direction: column;
+        padding: toRem(40px) toRem(40px);
+    }
+
     &__hdl {
         font-family: 'Playfair Display', serif;
         font-style: normal;
@@ -23,6 +39,9 @@
         font-size: 64px;
         color: $secondary-font-color;
         margin: 0;
+        @media screen and (max-width: 1440px) {
+            font-size: toRem(54px);
+        }
     }
 
     &__wrapper {
@@ -36,6 +55,12 @@
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            min-width: revert;
+        }
     }
 
     &__group {
@@ -43,6 +68,10 @@
         flex-direction: column;
         gap: toRem(16px);
         flex-grow: 1;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            box-sizing: border-box;
+        }
     }
 
     &__label {
@@ -54,7 +83,9 @@
         border-width: 0;
         background-color: #FFE8D4;
         border-radius: toRem(12px);
-
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
     }
     &__input::placeholder {
         color: $primary-color;
@@ -67,5 +98,8 @@
         color: $primary-font-color;
         border-width: 0;
         cursor: pointer;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 }
