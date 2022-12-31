@@ -7,7 +7,7 @@
     gap: toRem(100px);
     max-width: toRem(1262px);
     position: absolute;
-    bottom: toRem(454px);
+    top: toRem(-115px);
     left: toRem(90px);
     right: toRem(90px);
     margin-inline: auto;
@@ -30,6 +30,10 @@
         right: toRem(20px);
         flex-direction: column;
         padding: toRem(40px) toRem(40px);
+        top: toRem(-312px);
+    }
+    @media screen and (max-width: 768px) {
+        top: toRem(-400px);
     }
 
     &__hdl {
@@ -41,6 +45,9 @@
         margin: 0;
         @media screen and (max-width: 1440px) {
             font-size: toRem(54px);
+        }
+        @media screen and (max-width: 768px) {
+            font-size: toRem(40px);
         }
     }
 
