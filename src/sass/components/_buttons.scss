@@ -54,8 +54,12 @@
         @media screen and (max-width: 768px) {
         }
     }
+    &.bottom-nav {
+        left: calc(100vw - toRem(364px));
+        bottom: toRem(235px);
+    }
     .slider &{
-        bottom: toRem(-100px);
+        bottom: toRem(-150px);
         left: 50%;
         transform: translateX(-50%);
     }
