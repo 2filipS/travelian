@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@400;500&display=swap"
             rel="stylesheet">
+    <script src="src/scripts/app.js" async defer></script>
 </head>
 
 <body>
@@ -370,8 +371,8 @@
                 <h2 class="section-header__hdl">Traveler’s Experiences</h2>
                 <p class="section-header__desc">Here some awesome feedback from our travelers</p>
             </header>
-            <div class="travelers-exp__content">
-                <div class="travelers-exp__client client-box">
+            <div class="travelers-exp__content" data-js="slider">
+                <div data-js="slide" class="travelers-exp__client client-box">
                     <img src="src/images/Avatar1.png" class="client-box__avatar" alt="">
                     <div class="client-box__wrapper">
                         <p class="client-box__review">
@@ -394,7 +395,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="travelers-exp__client client-box">
+                <div data-js="slide" class="travelers-exp__client client-box">
                     <img src="src/images/Avatar2.png" class="client-box__avatar" alt="">
                     <div class="client-box__wrapper">
                         <p class="client-box__review">
@@ -417,7 +418,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="travelers-exp__client client-box">
+                <div data-js="slide" class="travelers-exp__client client-box">
                     <img src="src/images/Avatar3.png" class="client-box__avatar" alt="">
                     <div class="client-box__wrapper">
                         <p class="client-box__review">
@@ -444,8 +445,8 @@
             </div>
 
             <nav class="travelers-exp__nav nav-arrows bottom-nav">
-                <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                <button type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                <button data-js="left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                <button data-js="right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
             </nav>
 
         </section>
