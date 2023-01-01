@@ -95,25 +95,25 @@
                 </nav>
             </header>
 
-            <div class="destinations__slider slider">
-                <a class="destinations__image active">
+            <div data-js="slider" class="destinations__slider slider">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-berlin.png" alt="" class="destinations__img">
                 </a>
-                <a class="destinations__image">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-london.png" alt="" class="destinations__img">
                 </a>
-                <a class="destinations__image">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-venice.png" alt="" class="destinations__img">
                 </a>
-                <a class="destinations__image">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-lisbon.png" alt="" class="destinations__img">
                 </a>
-                <a class="destinations__image">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-thailand.png" alt="" class="destinations__img">
                 </a>
                 <nav class="nav-arrows mobile-active">
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                    <button data-js="left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
                 </nav>
             </div>
 
@@ -442,12 +442,13 @@
                     </div>
                 </div>
 
+                <nav class="travelers-exp__nav nav-arrows bottom-nav">
+                    <button data-js="left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                </nav>
             </div>
 
-            <nav class="travelers-exp__nav nav-arrows bottom-nav">
-                <button data-js="left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                <button data-js="right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
-            </nav>
+
 
         </section>
 
