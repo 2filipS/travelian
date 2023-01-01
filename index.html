@@ -90,8 +90,8 @@
                         class="br"> to
                     natural wonders.</p>
                 <nav class="section-nav nav-arrows">
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                    <button data-js="nav-left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="nav-right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
                 </nav>
             </header>
 
@@ -120,16 +120,16 @@
         </section>
 
         <section class="special-offer">
-            <header class="special-offer__header section-header">
+            <header class="special-offer__header section-header" data-js="header">
                 <h2 class="section-header__hdl">Special Offer</h2>
                 <p class="section-header__desc">Check out our special offer and discounts</p>
                 <nav class="section-nav nav-arrows">
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                    <button data-js="nav-left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="nav-right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
                 </nav>
             </header>
-            <div class="special-offer__content slider">
-                <div class="offer active">
+            <div data-js="slider" class="special-offer__content slider">
+                <div data-js="slide" class="offer">
                     <img src="src/images/special-lisbon.jpg" alt="" class="offer__image">
                     <div class="offer__text-block">
                         <h3 class="offer__hdl">Lisbon, Portugal</h3>
@@ -151,7 +151,7 @@
                     </div>
 
                 </div>
-                <div class="offer">
+                <div data-js="slide" class="offer">
                     <img src="src/images/special-athens.jpg" alt="" class="offer__image">
 
                     <div class="offer__text-block">
@@ -173,7 +173,7 @@
                     </div>
                     <button class="offer__details-btn">DETAILS</button>
                 </div>
-                <div class="offer">
+                <div data-js="slide" class="offer">
                     <img src="src/images/special-rome.jpg" alt="" class="offer__image">
                     <div class="offer__text-block">
                         <h3 class="offer__hdl">Rome, Italy</h3>
@@ -195,8 +195,8 @@
                     <button class="offer__details-btn">DETAILS</button>
                 </div>
                 <nav class="nav-arrows mobile-active">
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                    <button data-js="left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
                 </nav>
             </div>
 
