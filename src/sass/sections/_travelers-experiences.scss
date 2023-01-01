@@ -33,16 +33,14 @@
     &__nav{
         @media screen and (max-width: 1440px){
             display: flex;
-            left: calc(100vw - toRem(240px)) !important;
+            left: 50vw !important;
+            transform: translateX(-75%);
         }
         @media screen and (max-width: 1152px){
-            left: 50% !important;
-            bottom: toRem(404px) !important;
-            transform: translateX(-50%);
+            bottom: toRem(-85px) !important;
         }
         @media screen and (max-width: 768px){
-            bottom: toRem(543px) !important;
-            transform: translateX(-50%);
+            bottom: toRem(-155px) !important;
         }
     }
 }
@@ -52,7 +50,7 @@
     padding-top: toRem(42px);
     margin-bottom: toRem(100px);
     min-width: toRem(663px);
-    transition: transform 400ms linear;
+    transition: transform 400ms ease-in-out;
     @media screen and (max-width: 768px) {
         min-width: calc(100vw - toRem(60px));
     }
