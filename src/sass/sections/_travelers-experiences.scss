@@ -52,8 +52,9 @@
     padding-top: toRem(42px);
     margin-bottom: toRem(100px);
     min-width: toRem(663px);
+    transition: transform 400ms linear;
     @media screen and (max-width: 768px) {
-        min-width: calc(100vw);
+        min-width: calc(100vw - toRem(60px));
     }
     &__avatar {
         position: absolute;
