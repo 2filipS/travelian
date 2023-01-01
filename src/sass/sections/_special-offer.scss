@@ -3,11 +3,11 @@
 
 
 .special-offer {
-    min-height: 100vh;
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
     gap: toRem(100px);
+    padding-bottom: toRem(140px);
     box-sizing: border-box;
     @media screen and (max-width: 1440px) {
         margin-left: toRem(30px);
@@ -15,6 +15,7 @@
     @media screen and (max-width: 1152px) {
         margin-left: toRem(20px);
         gap: toRem(50px);
+        padding-bottom: toRem(200px);
     }
     @media (min-width: 1441px) {
         margin-left: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */

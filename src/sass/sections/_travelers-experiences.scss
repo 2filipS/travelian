@@ -2,30 +2,49 @@
 @import "../abstracts/helpers";
 
 .travelers-exp {
-    min-height: 100vh;
+    padding-bottom: toRem(435px);
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow: hidden;
+    min-height: 100vh;
     position: relative;
     gap: toRem(100px);
+    box-sizing: border-box;
     @media (min-width: 1441px) {
-        margin-left: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
+        margin-inline: calc((100vw - 1440px) * (182 - 30) / (1920 - 1440) + 30px); /* fluid value */
     }
     @media screen and (max-width: 1440px) {
-        margin-left: toRem(30px);
+        margin-inline: toRem(30px);
+    }
+    @media screen and (max-width: 1152px) {
+        padding-bottom: toRem(515px);
     }
     @media screen and (max-width: 768px) {
         margin-left: toRem(20px);
         margin-right: toRem(20px);
+        padding-bottom: toRem(700px);
     }
     &__content {
         display: flex;
         position: relative;
         gap: toRem(32px);
     }
-
+    &__nav{
+        @media screen and (max-width: 1440px){
+            display: flex;
+            left: calc(100vw - toRem(240px)) !important;
+        }
+        @media screen and (max-width: 1152px){
+            left: 50% !important;
+            bottom: toRem(404px) !important;
+            transform: translateX(-50%);
+        }
+        @media screen and (max-width: 768px){
+            bottom: toRem(543px) !important;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 .client-box {

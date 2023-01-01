@@ -2,7 +2,8 @@
 @import "../abstracts/helpers";
 
 .trip-planners{
-    min-height: toRem(825px);
+    //min-height: toRem(825px);
+    padding-bottom: toRem(140px);
     display: flex;
     align-items: center;
     gap: toRem(100px);
@@ -16,6 +17,7 @@
         flex-direction: column;
         align-items: flex-start;
         margin-inline: toRem(20px);
+        gap: toRem(200px);
     }
         .trip-planners__btn{
             border-radius: toRem(12px);
