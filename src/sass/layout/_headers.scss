@@ -140,11 +140,13 @@
         font-weight: 400;
         color: $secondary-font-color;
         margin-right: toRem(20px);
+        box-sizing: border-box;
         @media screen and (max-width: 1152px) {
             font-size: toRem(20px);
         }
         @media screen and (max-width: 768px) {
             font-size: toRem(18px);
+            padding-right: toRem(60px);
         }
     }
     .section-nav{

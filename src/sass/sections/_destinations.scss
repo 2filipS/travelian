@@ -22,7 +22,7 @@
         padding-bottom: toRem(100px);
     }
     @media screen and (max-width: 1152px) {
-        margin-left: toRem(20px);
+        margin-inline: toRem(20px);
         gap: toRem(50px);
         padding-top: toRem(80px);
         padding-bottom: toRem(200px);
@@ -44,26 +44,20 @@
     .destinations__slider {
         display: flex;
         gap: toRem(32px);
-
-        @media screen and (max-width: 1152px) {
-            max-width: calc(100vw - toRem(53px));
-            width: 100%;
-            & a:not(.active) {
-                display: none;
-            }
-        }
+        //@media screen and (max-width: 1152px) {
+        //    max-width: calc(100vw - toRem(53px));
+        //    width: 100%;
+        //}
 
         .destinations__image {
+            transition: transform 400ms ease-in-out;
             min-width: toRem(497px);
             min-height: toRem(661px);
             cursor: pointer;
             @media screen and (max-width: 1152px) {
-                display: none;
-                &.active {
-                    min-height: toRem(288px);
-                    min-width: toRem(320px);
-                    display: block;
-                }
+                display: block;
+                min-width: calc(100vw - 60px);
+
             }
         }
 
@@ -72,8 +66,10 @@
             object-fit: cover;
             width: 100%;
             min-height: 100%;
+            max-height: toRem(680px);
             @media screen and (max-width: 1152px) {
                 object-fit: contain;
+                aspect-ratio: 1.6;
             }
         }
 

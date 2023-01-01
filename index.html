@@ -85,51 +85,51 @@
 
         <section class="destinations">
             <header class="destinations__header section-header">
-                <h2 class="section-header__hdl">Popular Destinations</h2>
+                <h2 class="section-header__hdl">Popular <br class="break-mobile"> Destinations</h2>
                 <p class="section-header__desc">Most popular destinations around the world, from historical places<br
                         class="br"> to
                     natural wonders.</p>
                 <nav class="section-nav nav-arrows">
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                    <button data-js="nav-left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="nav-right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
                 </nav>
             </header>
 
-            <div class="destinations__slider slider">
-                <a class="destinations__image active">
+            <div data-js="slider" class="destinations__slider slider">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-berlin.png" alt="" class="destinations__img">
                 </a>
-                <a class="destinations__image">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-london.png" alt="" class="destinations__img">
                 </a>
-                <a class="destinations__image">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-venice.png" alt="" class="destinations__img">
                 </a>
-                <a class="destinations__image">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-lisbon.png" alt="" class="destinations__img">
                 </a>
-                <a class="destinations__image">
+                <a data-js="slide" class="destinations__image">
                     <img src="./src/images/destinations-thailand.png" alt="" class="destinations__img">
                 </a>
                 <nav class="nav-arrows mobile-active">
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                    <button data-js="left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
                 </nav>
             </div>
 
         </section>
 
         <section class="special-offer">
-            <header class="special-offer__header section-header">
+            <header class="special-offer__header section-header" data-js="header">
                 <h2 class="section-header__hdl">Special Offer</h2>
                 <p class="section-header__desc">Check out our special offer and discounts</p>
                 <nav class="section-nav nav-arrows">
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                    <button data-js="nav-left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="nav-right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
                 </nav>
             </header>
-            <div class="special-offer__content slider">
-                <div class="offer active">
+            <div data-js="slider" class="special-offer__content slider">
+                <div data-js="slide" class="offer">
                     <img src="src/images/special-lisbon.jpg" alt="" class="offer__image">
                     <div class="offer__text-block">
                         <h3 class="offer__hdl">Lisbon, Portugal</h3>
@@ -151,7 +151,7 @@
                     </div>
 
                 </div>
-                <div class="offer">
+                <div data-js="slide" class="offer">
                     <img src="src/images/special-athens.jpg" alt="" class="offer__image">
 
                     <div class="offer__text-block">
@@ -173,7 +173,7 @@
                     </div>
                     <button class="offer__details-btn">DETAILS</button>
                 </div>
-                <div class="offer">
+                <div data-js="slide" class="offer">
                     <img src="src/images/special-rome.jpg" alt="" class="offer__image">
                     <div class="offer__text-block">
                         <h3 class="offer__hdl">Rome, Italy</h3>
@@ -195,8 +195,8 @@
                     <button class="offer__details-btn">DETAILS</button>
                 </div>
                 <nav class="nav-arrows mobile-active">
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                    <button type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                    <button data-js="left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
                 </nav>
             </div>
 
@@ -249,7 +249,7 @@
 
 
             <div class="trip-planners__content">
-                <div class="trip-planners__trip trip">
+                <div data-js="trip" class="trip-planners__trip trip">
                     <div class="trip__image">
                         <img src="./src/images/trip-planner-rome.png" alt="" class="trip__img">
                     </div>
@@ -259,7 +259,7 @@
                             <div class="trip__price">&euro;99/Day</div>
                         </div>
 
-                        <div class="trip__dest font-xl font-family-serif font-bold">Paris City Tour</div>
+                        <div class="trip__dest font-xl font-family-serif font-bold">Rome City Tour</div>
                         <div class="row">
                             <div class="trip__rating">
                                 <img src="src/images/star.svg" alt="" class="client-box__star">
@@ -272,14 +272,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="trip-planners__trip trip active">
+                <div data-js="trip" class="trip-planners__trip trip active">
                     <div class="trip__image">
                         <img src="./src/images/trip-planner-paris.png" alt="" class="trip__img">
                     </div>
                     <div class="trip__info">
                         <div class="row font-sm">
                             <div class="trip__type">GUIDED TOUR</div>
-                            <div class="trip__price">&euro;99/Day</div>
+                            <div class="trip__price">&euro;95/Day</div>
                         </div>
 
                         <div class="trip__dest font-xl font-family-serif font-bold">Paris City Tour</div>
@@ -295,17 +295,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="trip-planners__trip trip">
+                <div data-js="trip" class="trip-planners__trip trip">
                     <div class="trip__image">
                         <img src="./src/images/trip-planner-barcelona.png" alt="" class="trip__img">
                     </div>
                     <div class="trip__info">
                         <div class="row font-sm">
                             <div class="trip__type">GUIDED TOUR</div>
-                            <div class="trip__price">&euro;99/Day</div>
+                            <div class="trip__price">&euro;89/Day</div>
                         </div>
 
-                        <div class="trip__dest font-xl font-family-serif font-bold">Paris City Tour</div>
+                        <div class="trip__dest font-xl font-family-serif font-bold">Barcelona City Tour</div>
                         <div class="row">
                             <div class="trip__rating">
                                 <img src="src/images/star.svg" alt="" class="client-box__star">
@@ -318,17 +318,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="trip-planners__trip trip">
+                <div data-js="trip" class="trip-planners__trip trip">
                     <div class="trip__image">
                         <img src="./src/images/trip-planner-budapest.png" alt="" class="trip__img">
                     </div>
                     <div class="trip__info">
                         <div class="row font-sm">
                             <div class="trip__type">GUIDED TOUR</div>
-                            <div class="trip__price">&euro;99/Day</div>
+                            <div class="trip__price">&euro;89/Day</div>
                         </div>
 
-                        <div class="trip__dest font-xl font-family-serif font-bold">Paris City Tour</div>
+                        <div class="trip__dest font-xl font-family-serif font-bold">Budapest City Tour</div>
                         <div class="row">
                             <div class="trip__rating">
                                 <img src="src/images/star.svg" alt="" class="client-box__star">
@@ -346,7 +346,7 @@
 
         <section class="gallery">
             <header class="gallery__header section-header">
-                <h2 class="section-header__hdl">Destination Gallery</h2>
+                <h2 class="section-header__hdl">Destination <br class="break-mobile"> Gallery</h2>
                 <p class="section-header__desc">Our photo gallery on trip</p>
                 <nav class="section-nav nav-arrows">
                     <button type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
@@ -442,12 +442,13 @@
                     </div>
                 </div>
 
+                <nav class="travelers-exp__nav nav-arrows bottom-nav">
+                    <button data-js="left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
+                    <button data-js="right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
+                </nav>
             </div>
 
-            <nav class="travelers-exp__nav nav-arrows bottom-nav">
-                <button data-js="left-btn" type="button" class="nav-arrows__btn nav-arrows__btn--left"></button>
-                <button data-js="right-btn" type="button" class="nav-arrows__btn nav-arrows__btn--right"></button>
-            </nav>
+
 
         </section>
 

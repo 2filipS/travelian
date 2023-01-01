@@ -55,12 +55,12 @@
         }
     }
     &.bottom-nav {
-        left: calc(100vw - toRem(364px));
-        bottom: toRem(235px);
+        left: calc(100vw - toRem(450px));
+        bottom: toRem(-160px);
     }
     .slider &{
         bottom: toRem(-150px);
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-65%);
     }
 }
