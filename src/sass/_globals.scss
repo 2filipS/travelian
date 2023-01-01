@@ -2,3 +2,10 @@ body {
     max-width: 100dvw;
     overflow-x: hidden;
 }
+
+.break-mobile {
+    display: none;
+    @media screen and (max-width: 768px){
+        display: inline-block;
+    }
+}
