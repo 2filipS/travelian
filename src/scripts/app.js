@@ -3,8 +3,8 @@ const slidersRef = document.querySelectorAll("[data-js='slider']");
 
 slidersRef.forEach(function (slider){
     const slidesRef = slider.querySelectorAll("[data-js='slide']");
-    const leftBtnRef = slider.nextElementSibling.querySelector("[data-js='left-btn']");
-    const rightBtnRef = slider.nextElementSibling.querySelector("[data-js='right-btn']");
+    const leftBtnRef = slider.querySelector("[data-js='left-btn']");
+    const rightBtnRef = slider.querySelector("[data-js='right-btn']");
 
     console.log(slidesRef);
 
